@@ -1,0 +1,22 @@
+Chat gpt, nesse instante, vou começar a trabalhar no primeiro case de earning call intelligence tracker, como que eu posso conseguir esses dados. Quero escolher a AMBEV, já que é uma empresa famosa e estável listada na ibovespa, por favor me de opção de como posso fazer essa ingestão, ainda, estou pensando em usar uma modelo do hughing face pronto de analise de sentimentos, uma vez que essa transcrição é apenas texto, quais modelos vc sugere para mim, ainda, posso fazer uma ultima camada com uma chamada de LLM para analisar e gerar o relatório, me de sugestões por favor
+
+Perfeito, achei o transcript online, tem na seeking alpha e no yahoo finance, mas tem uma questão de contexto que não sei se o analisar de sentimento é capaz de lidar, pq quem esta fazendo a pergunta e respondendo é muito importante, esse contexto adicional pode ser um problema, ainda, tem como eu ingerir esses dados sem ser baixando/copiando e colando tudo ? 
+
+Então, mas eu posso passar apenas aquilo que o manager (ceo/cfo) falou ? ou é conveniente passar também as perguntas ?
+
+Perfeito, lendo essa descrição diria que faz mais sentido pegar apenas o manager mesmo
+
+"
+Earnings calls são uma das fontes mais ricas de informação para Equity Strategy. Em uma única call de 
+60–90 minutos, o management entrega guidance, sinaliza estratégia, e responde a perguntas relevantes 
+de analistas — frequentemente com nuances linguísticas que o consenso de mercado leva dias para 
+processar. Queremos uma ferramenta que extraia o sinal dessa fonte em minutos. 
+"
+
+ainda, como que eu posso validar as minhas previsões ? 
+
+Olhando para o core do case1, eu preciso mesmo das perguntas do analistas sim, mas eu não sei como eu posso fazer o modelo pronto devolver as informações que preciso para esse json, já que ele apenas avalia se foi "positivo/negativo", acho que faz mais sentido usar uma call de API de LLM mesmo, já que eu preciso de algo mais complexo. Eu ainda preciso fazer a separação do transcript ? ou eu posso apenas colocar tudo para a LLM ler ?
+
+é assim que o texto vem copiado e colado direot, o que vc recomenda para eu fazer como tratamento de tados para ficar mais claro para a LLM ? 
+
+Perfeito, dividi os dados nesse formato de json agora, mas sinto que esta faltando uma ligação entre quem pergunta e quem responde, vc pode, olhando o original, fazer uma pareamento de quais são as respostas de qual pergunta, pode colocar um tipo "id_pergunta" como chave se quiser

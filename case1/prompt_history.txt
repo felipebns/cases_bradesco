@@ -60,3 +60,7 @@ README com arquitetura, decisões de prompt engineering, e limitações identifi
 perfeito, por fim eu quero que vc faça isso para mim por favor, complete o README com essas especificações, as identificações que eu encontro de cara são que: 
 
 eu faço a ingestão de APENAS texto, não detecto voz,então alguns nuances podem passar despercebido, a ingestão de dados é bem manual ainda, eu copio e colo do seeking alpha e faço o tratamento na mão, embora não consuma muito tempo, é algo que pode ser automatizado, mas devido ao escopo relativamente simples do projeto não foi uma prioridade, eu faço 2 calls de LLM, que pode ser tanto uma força (responsabilidades separadas gera um output mais preciso) e uma fraqueza, aumentando o custo. A arquitetura é bem simples, main chama a Pipeline, que orquesta o llm_wrapper, os prompts e para onde o output vai. Classes simples para o core, o prompt enginnering foi necessário gastar tempo especificando como o json tem que sair e ênfase em comparar ao quartil anterior
+
+Agora ficou muito curto, preciso de uma relatório mais extenso, tem que discutir os aspectos falados na call, pense que um executivo vai tomar decisões com base nesse relatório final
+
+Outra coisa, esse surprise score esta muito vago, estabeleça benchmarks para explicitar o que é um surprise score de 10 por exemplo, o que é um 5, etc

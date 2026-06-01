@@ -54,6 +54,13 @@ INSTRUCOES ESPECIFICAS:
 - top_analyst_questions: selecione exatamente as 3 perguntas mais criticas; explique a qualidade da resposta.
 - red_flags: cite trechos literais que indiquem hesitacao, mudanca de assunto ou evasao.
 - surprise_score: itens que provavelmente nao estavam no consenso pre-call, com justificativa.
+
+BENCHMARKS PARA SURPRISE SCORE (0-10):
+- 0-2: Nada material fora do consenso; apenas reafirmacoes e rotina.
+- 3-4: Pequenas surpresas taticas ou comentarios sem impacto relevante.
+- 5-6: Surpresa moderada com impacto setorial/financeiro limitado.
+- 7-8: Surpresa forte, altera expectativas de curto prazo ou guidance de forma relevante.
+- 9-10: Surpresa excepcional, muda tese/investment case ou outlook de forma significativa.
 """
 
 data_input_template_process = """
@@ -66,11 +73,14 @@ past_period_data (JSON):
 """
 
 summary_prompt = """
-Gere um relatorio executivo em markdown com no maximo 400 caracteres.
+Você é um assistente de análise de transcrições de earnings calls. Sua tarefa é gerar um relatório executivo em formato markdown, com base na análise estruturada em JSON fornecida. O relatório deve destacar os pontos mais relevantes e insights extraídos da comparação entre o período atual e o período anterior.
+Lembre-se, o que você criar vai ser utilizado por executivos para tomar decisões, então seja eficiente e profissional.
+Gere um relatorio executivo em markdown com no maximo 400 palavras.
 Nao mencione o JSON, nem que leu dados estruturados.
 Use somente informacoes do conteudo fornecido e nao invente.
 Fale apenas das noticias/destaques relevantes (sem meta-comentarios).
-Use elementos de markdown mais robustos: titulo, subtitulos, listas e destaques em negrito.
+Estruture com: titulo, subtitulos por tema (resultado, guidance, riscos, sinais de surpresa),
+listas objetivas e destaques em negrito.
 """
 
 data_input_template_summary = """

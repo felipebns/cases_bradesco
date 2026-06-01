@@ -20,3 +20,5 @@ Olhando para o core do case1, eu preciso mesmo das perguntas do analistas sim, m
 é assim que o texto vem copiado e colado direot, o que vc recomenda para eu fazer como tratamento de tados para ficar mais claro para a LLM ? 
 
 Perfeito, dividi os dados nesse formato de json agora, mas sinto que esta faltando uma ligação entre quem pergunta e quem responde, vc pode, olhando o original, fazer uma pareamento de quais são as respostas de qual pergunta, pode colocar um tipo "id_pergunta" como chave se quiser
+
+Perfeito, agora que eu fiz a limpeza manual do quartil atual, preciso que vc faça a mesma coisa com o raw/processed para o q4_2025 por favor

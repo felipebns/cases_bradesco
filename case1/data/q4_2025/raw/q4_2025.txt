@@ -1,0 +1,246 @@
+Ambev S.A. (ABEV) Q4 2025 Earnings Call February 12, 2026 11:30 AM EST
+
+Company Participants
+
+Carlos Eduardo Lisboa - CEO & Member of Board of Executive Officers
+Guilherme Fleury de Figueiredo Parolari - Chief Financial, Investors Relations & Shared Services Officer and Member of Executive Board
+
+Conference Call Participants
+
+Nadine Sarwat - Bernstein Institutional Services LLC, Research Division
+Henrique Brustolin - Banco Bradesco BBI S.A., Research Division
+Gustavo Troyano - Itaú Corretora de Valores S.A., Research Division
+Thiago Duarte - Banco BTG Pactual S.A., Research Division
+Renata Fonseca Cabral Sturani - Citigroup Inc., Research Division
+Isabella Simonato - BofA Securities, Research Division
+
+Presentation
+
+Operator
+
+Good afternoon, and thank you for waiting. We would like to welcome everyone to Ambev's 2025 Fourth Quarter and Full Year Results Conference Call. Today with us, we have Mr. Carlos Lisboa, Ambev's CEO; and Mr. Guilherme Fleury, CFO and Investor Relations Officer. As a reminder, this conference presentation is available for download on our website, ir.ambev.com.br as well as through the webcast link. We would like to inform you that this event is being recorded. [Operator Instructions]
+
+Before proceeding, let me mention that forward-looking statements are being made under the safe harbor of the Securities Litigation Reform Act of 1996. Forward-looking statements are based on the beliefs and assumptions of Ambev's management and on information currently available to the company. They involve risks, uncertainties and assumptions because they relate to future events and therefore, depends on circumstances that may or may not occur in the future. Investors should understand that general economic conditions, industry conditions and other operating factors could also affect the future results of Ambev and could cause results to differ materially from those expressed in such forward-looking statements.
+
+I would also like to remind everyone that, as usual, the percentage changes that will be discussed during today's call are both organic and normalized in nature. And unless otherwise stated, percentage changes refer to comparison with 2024 fourth quarter and full year results. Normalized figures refer to performance measures before exceptional items, which are either income or expenses that do not occur regularly as part of Ambev's normal activities. As normalized figures are non-GAAP measures, the company disclosed the consolidated profit, EPS, operating profit and EBITDA on a fully reported basis in the earnings release.
+
+Now I'll turn the conference over to Mr. Carlos Lisboa. Mr. Lisboa, you may begin your conference.
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Good afternoon, everyone, and thank you for joining our fourth quarter and full year 2025 earnings call. As we close the year, here is the message I hope you take away today. We made meaningful progress on the mission we set from day 1, even in a dynamic context that stress tested our strategy.
+
+Here is how we progressed. First, avoiding disruptions. We built on a strong foundation and maintained execution consistency across the company. Through active listening, we protected what was working and implemented improvements without destabilizing the organization. Second, keeping momentum. Over the course of the year, we advanced quarter-by-quarter on different fronts, finishing the year with a better performance for 2026. Third, building a stronger company. We avoided changing directions with the context. We advanced simultaneously on the 3 pillars of our strategy because that is where our differentiation comes from.
+
+This is what we mean by being ambidextrous. And it is building a flywheel that strengthens each year and sustain our performance over time. As a result, we ended 2025 stronger than we started. We strengthened our portfolio, got closer to our customers and consumers and advanced profitability. Volumes, however, were pressured by the environment, and that matters because it frames our ambition for what comes next.
+
+To use a simple analogy, 2025 was a tough season to play with a wet beach, cold weather and a game that kept changing. It forced us to build muscle, resilience and adaptability, and it strengthened our collective ownership as a team. And just as important, that strengthening showed up in our people. In a demanding year, employees' confidence in our future increased, driving engagement indicators to all-time highs, back to post-pandemic peak levels and reinforcing that our culture truly stands out in challenging moments. All that means we are coming out better prepared for the next season, which in 2026 happens to be the FIFA World Cup, a big passion point in our markets.
+
+So let me touch on another passion, beer. What we saw in 2025 reinforces our view that the headwinds were primarily cyclical and occasion driven, not a sudden change in beer fundamentals. A strong proof point is this. The most engaged consumers, our beer lovers, got closer to the category and the category equity strengthened over the year. In other words, beer continues to be loved, culturally relevant and deeply connected to socialization across our markets, where it holds a high share of alcoholic beverages.
+
+And we continue to see meaningful runway ahead. The category has headroom to expand, supported by favorable demographics in Latin America and growth through occasions development, both out-of-home and at home and through a broader portfolio that addresses trends and needs, recruiting new consumers. Simply put, what changed in 2025 was not whether consumers want beer, but how often the right moments happen.
+
+Now let me connect that to our strategy. Under Pillar 1, as the category captain, our job is to bridge the gap between beer potential and actual consumption, fostering category growth. In 2025, we led where the category expanded the most, premium, balanced choices and nonalcohol. We elevated the core segment through innovation and investments while building adjacencies like flavored beers.
+
+And that leads us to our Pillar 2, where we are using data and technology to shape our own future and stay ahead of the curve, strengthening the core business while building new growth engines. On the B2B side, our priority is to go deep with BEES as an enabler to make the core business stronger, helping us win through better execution at the point of sale. Our ecosystem is built on the idea that the better our customers perform, the better we perform. That is why we are embedding digital sellout activation tools powered by our data and insights, benchmarking what works across points of sale and translating it into sharper activation and portfolio recommendations.
+
+Also, BEES marketplace continues to scale with full year GMV growing 70%, driven by 3P expansion and gross margin up 3.5 percentage points versus last year, reinforcing both relevance and improving economics. On the consumer side, Z� Delivery closed 2025 with all-time high performance, delivering BRL 4.7 billion in GMV, up 13% versus last year. 67 million orders and 27 million yearly active users, up 11% versus last year, consolidating its position as one of the major convenience platforms in Brazil. Strategically, Z� put us close to young adult consumers with nearly 80% of buyers either Gen Z or millennials, and it accelerates both execution and our test and learn innovation loop. It is our food in the future.
+
+And this brings us to our third pillar, the muscle that makes the other 2 pillars scalable. In 2025, we set a clear ambition to expand Ambev's consolidated EBITDA margin again, EBM. Despite industry softness and FX and commodity headwinds, we delivered a meaningful evolution from top to bottom line that came from thoughtful choices on resource allocation, revenue management, productivity and expenses governance while sustaining brand investment. That discipline translated into delivery. At the consolidated level, we expanded organic EBITDA margin by 50 basis points, marking our third consecutive year of margin expansion and by 110 basis points in Brazil Beer.
+
+And that reinforced our confidence in capital allocation. Consistent with our commitment to return excess cash to shareholders over time, we announced approximately BRL 20 billion in shareholder returns in 2025, the highest in our history through BRL 13.2 billion in dividends, BRL 4.2 billion in interest on capital and a new BRL 2.5 billion in share buyback program. And we are starting the year paying the first BRL 1.2 billion tranche of the IOC declared by year-end.
+
+Now let me give a quick overview across our footprint. In 2025, we grew EBITDA across all our business units, and we expanded EBITDA margin in 4 out of 5. In Brazil Beer, full year volumes were in line with the soft industry, and our performance reflected 2 different halves. Our revenue management initiatives weighted on share in the first half. As conditions improved in the second half, market share expanded meaningfully. In Q4, as weather sequentially recovered, so did our volumes. October was the main drag, and we returned to growth in December. For the quarter, we delivered a low single-digit market share gain in Nielsen sell-out.
+
+We continue to lead where the category is expanding the most. premium and super premium volumes increased high teens, and we closed the year as leaders in the segment, reflecting stronger portfolio brand equity. Our balanced choices brands grew high 60s and nonalcohol grew around 30% as we continue to expand leadership and unlock incremental occasions. In the quarter, we delivered 100% of the Brazilian beer industry's growth in premium and nonalcohol according to our estimates and Nielsen sell-out data. In the core segment, softness was more pronounced given its higher reliance on out-of-home socialization. We are sustaining its recovery through stronger trade activation, marketing campaigns and continued innovation, and we started to see progress with market share gains in Q4.
+
+In Brazil NAB, during 2025, the disciplined execution of our strategy and resource allocation supported EBITDA growth with margin expansion. At the same time, Guaran� Antartica's equity improved, showcasing the strength of the brand. In the first half, volume momentum and commercial execution supported market share gains despite margin pressure given higher costs. In the second half, the CSD industry decelerated amid the same cyclical drivers that impacted beer. and price relativity became less favorable following our revenue management decisions, resulting in market share pressure while delivering a better profitability profile.
+
+In Argentina, the macro environment continued to improve with lower inflation and less FX volatility. The consumption recovery, however, is taking longer than we expected and continued to weigh on results in 2025. Still, performance improved sequentially throughout the year with a more balanced dynamic between top line and bottom line in the fourth quarter, supported by tighter execution and revenue management. Looking ahead, we remain constructive on a gradual recovery as the consumption environment improves.
+
+In the Dominican Republic, the consumption environment also improved sequentially through the year despite a weather-related disruption in Q4. In this context, beer gained share of alcoholic beverage in full year, supported by healthier dynamic between categories, while Presidente's brand health reached all-time highs. In Canada, we outperformed both beer and beyond beer industries, supported by our beer mega brands and continued beyond beer momentum while maintaining disciplined cost execution and delivering EBITDA margin expansion. With that, I will now turn it over to Fleury.
+
+Guilherme Fleury de Figueiredo Parolari
+Chief Financial, Investors Relations & Shared Services Officer and Member of Executive Board
+
+Thank you, Lisboa, and hello, everyone. As we enter 2025, we made it clear that this would be another year focused on long-term value creation through disciplined execution of our capital allocation framework. In a dynamic operating environment, we focus on what we can control and delivered another year of normalized EBITDA growth with margin expansion, EPS growth, resilient cash generation and a higher capital return to our shareholders.
+
+Let me walk you through our financial performance for the year, starting with the margin improvement dynamics. We closed 2025 delivering consolidated normalized EBITDA margin expansion of 50 bps reaching 33.4%, mainly driven by 3 factors: First, net revenue per hectoliter growth of 7.5%, supported by stronger brands, revenue management strategy and continued premiumization across our portfolio, leading to net revenue per hectoliter growth across all of our business units.
+
+Second, financial discipline. Consolidated cash COGS per hectoliter performance benefited from productivity initiatives and operational efficiencies across our industrial and logistics operations. Brazil Beer is a clear proof point. Despite the cost headwinds anticipated at the beginning of the year and the operational deleveraging associated with lower volumes, our cash COGS per hectoliter, excluding non-Ambev marketplace products increased by 6.1% in 2025 at the lowest quartile of our guidance. And third, efficient resource allocation. In SG&A, we continued to invest behind our brands while keeping total cash SG&A growth under control.
+
+Now moving to below EBITDA lines. We closed the year with almost BRL 4 billion in net financial expenses mainly explained by FX variation losses related to foreign currency-denominated assets and the BRL appreciation, coupled with expenses related to sourcing U.S. dollars in Bolivia. In terms of income taxes, our effective tax rate for the year was 17.7%, reflecting some one-off effects mainly from Q3, such as the Barbados divestment, the partial reversal of tax liabilities associated with the 2017 Brazilian tax amnesty program and certain effects related to tax credits. Absent such one-offs, our consolidated effective tax rate would have been approximately 20% for the year. As a result, stated net income reached almost BRL 16 billion with stated EPS increasing 8.2% year-on-year, while normalized EPS increased by 2% in the year.
+
+Now turning to cash flow. Cash flow from operating activities remained solid and totaled BRL 24.5 billion, BRL 1.6 billion lower than last year, mainly due to softer volumes that impacted working capital. Cash flow consumed in investing activities totaled approximately BRL 5 billion, mainly driven by CapEx investment broadly in line with last year. Cash flow consumed in financing activities amounted to BRL 26.8 billion, driven by shareholder payouts and the completion of our 2024 share buyback program.
+
+In total, we returned BRL 21.7 billion to shareholders on a cash basis, meaning that approximately 90% of our operating cash flow was returned to shareholders in 2025 and reinforcing our commitment to sustainable long-term value creation, our return on invested capital continued to be meaningfully above our weighted average cost of capital and improved in 2025, driven by NOPAT margin.
+
+For 2026, we remain consistent towards our capital allocation priorities of: one, reinvesting in our organic growth to keep supporting the development of Pillar 1 and Pillar 2 of our strategy; two, maintaining a disciplined approach towards M&A opportunities; and three, consistently return excess cash to shareholders over time. In terms of costs, in 2026, we expect Brazil Beer cash COGS per hectoliter, excluding non-Ambev marketplace products to increase between 4.5% and 7.5%, driven primarily by commodity prices, aluminum, in particular, and portfolio mix with higher cost pressures anticipated in the first half of the year.
+
+At the same time, we remain focused on identifying opportunities and enhancing efficiency as we continue to pursue our ambition of expanding consolidated margin over time. And before handing it back to Lisboa, I would like to share a team update. Patrick Conrad, a seasoned finance professional, is joining our Investor Relations team, succeeding Guilherme Yokaichiya. Yoka, in turn, will transition to a fully dedicated position leading Ambev's treasury team. I would like to take this opportunity to thank Yoka for the outstanding work he has done leading Ambev's Investor Relations team over the past 5 years and to wish both continued success in their new roles. Now back to you, Lisboa.
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Thank you, Fleury. As I reflect about 2025, it was another year marked by a very dynamic operating environment, and that strengthened our ability to read and adapt to market changes. 2026 will certainly bring its own dynamics, but it is also shaping up to be a promising year for socialization, and those moments have already started. Carnival is underway, not only in Brazil, but across several of our Latin American markets. From there, we begin to warm up for the FIFA World Cup, the biggest additional record in favorable time zones for our footprint, creating another interesting backdrop for people to come together.
+
+On top of that, in Brazil, a holiday-rich calendar adds several long weekends throughout the year, creating additional occasions for socialization. In this context, I want to leave you with 3 reminders. First, beer is a loved category in Latin America with strong fundamentals, and that strength comes with headroom for growth, given its versatility to address consumers' trends and needs. Second, we, as a company, are advancing simultaneously on our 3 strategic pillars, strengthening a flywheel we can compound year after year. And third, we entered 2026 as a stronger company with momentum carryover and how we navigated 2025 was another proof point that our culture stands out in times like this.
+
+And none of this happens without our people. I want to close by thanking our teams across all markets for their ownership, adaptability and execution through a very demanding year and for the energy they are bringing into 2026. With that, let me hand it over to the operator.
+
+Question-and-Answer Session
+
+Operator
+
+[Operator Instructions] Our first question comes from Nadine Sarwat from Bernstein.
+
+Nadine Sarwat
+Bernstein Institutional Services LLC, Research Division
+
+I'd like to double-click on Brazil. So firstly, great seeing that commentary about December beer volumes being in growth. Can you unpack that a little bit, the magnitude factors behind that? Was it all weather? Or were there any other favorable shifts? And are you able to comment any trends in January? And following up to that, secondly, Brazil NAB, I know you guys called out your revenue management strategy as a reason behind the volume decline. Can you add some color as to what the exact decisions were that resulted in that decline? And then what can we expect for volumes in '26?
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Nadine, nice to talk to you again. Lisboa here. Look, I'm going to follow the protocol. I'm going to get the first answer. Regarding Brazil Beer, to your point about what are the drivers. So quickly reminder, what happened last year made 2025 like an outlier year for the beer industry in Brazil. Prior to that, 10 years' time, 5 years' time, 3 years' time, there was consistent growth and pretty much driven by favorable demographics and disposable income increase.
+
+Last year, and we mentioned that during the result announcement, what we saw was unseasonable weather impacting mostly the wintertime and boosted by the La Nina phenomenon that somehow made the winter go deeper and longer in the second half. And that created unfavorable type of situation for beer because it impacted the most an occasion and out-of-home occasions that are where the beer category volume resides. So that's the reason why we saw the impact. Obviously, it was not an easy situation for us to manage.
+
+As I said before, it was the first time that we saw such a strong impact in our industry, but I think the team put all the emphasis behind things that we could control. And by doing so, we kept evolving quarter-by-quarter. And when the weather changed during the last quarter of last year, we were ready to ride together with the more favorable weather impacting the demand again. And this is exactly how the situation went through. In October, pretty much the month represented the vast majority of our decline in the quarter view year-over-year. We got to a better position in November. And then in December, when you combine the better weather with the market share gain that we got in the final round, the final quarter of the year, which represents around a low single-digit in sell-out data growth, that explains the positive territory that we landed.
+
+I won't go into the details about the first quarter of this year. But what I can say, Nadine, is the following. Actually, that weather pretty much came into the first round of this year, the first month of this year, what puts in a year-over-year comparison, the weather impact is neutral, which is important for us.
+
+Henrique Brustolin
+Banco Bradesco BBI S.A., Research Division
+
+Sustaining and even improving profitability in 2025. You ended up doing that. There was an impressive performance on the SG&A, especially distribution costs. I would just like to get your thoughts about how you're thinking about this going into 2026, when you think about the hedging that you have for Brazil Beer as well as the room for additional efficiencies, how you see all of that shaping up for the year?
+
+Guilherme Fleury de Figueiredo Parolari
+Chief Financial, Investors Relations & Shared Services Officer and Member of Executive Board
+
+Thank you, Henrique, Fleury here. Can you hear me well? Just checking the mic here on my end.
+
+Henrique Brustolin
+Banco Bradesco BBI S.A., Research Division
+
+Yes, I can.
+
+Guilherme Fleury de Figueiredo Parolari
+Chief Financial, Investors Relations & Shared Services Officer and Member of Executive Board
+
+Great. So let me start with how we put your question. I think 2025, just to recap, was really a year that when we started, we saw important cash COGS pressure. I'm talking about Brazil Beer. That's why we have given a guidance last year of 5.5% to 8.5%. And we have done here a series of, I would say, projects looking to different lines of our P&L. As I said in my speech, we focus on the industrial side, we focus on the distribution, always privileging the investment behind our brands because that is what we need to continue to focus to make Pillar 1 and Pillar 2 work better.
+
+By a series of implementation of these strategies, we are happy that we landed on the 6.1%, which was the first quartile of our guidance, okay? Now when we look into '26, I think there are 2 things that remain the same. One is we need to continue to work very hard on the initiatives. We need to continue to make it very focused on our side to -- with our ambition of coming with another year of margin expansion, and we are already doing that as we started the year.
+
+And when we do our analysis, when we look into the costs, our hedging, which is nonspeculative, when we look at the commodities, so on and so forth, we are giving the guidance to the market of 4.5% to 7.5% for the full year of '26, which is midpoint broadly in line with what we have done in '25. And that is pressured, as I said in my speech, from commodities, aluminum in particular, and portfolio mix. But be in mind that we will continue to work very hard. It's our job here to do the work and probably throughout the year, come narrowing or come with news on here. So far, that is the guidance that we have.
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Henrique, Lisboa here. Just to complement Fleury. You can imagine that nobody here, we are not expecting such a challenging context in terms of volume drop for the industry, especially here in Brazil. So that put a lot of stress on our ambition to protect margins for Ambev again. And I think last year was -- that's the reason why we said it was a stress test for us. Because if we could somehow overcome the FX, overcome commodities, and on top of that, overcome the lack of capacity to dilute costs without having the volumes that give us confidence.
+
+Somehow, I think the obstacle made us develop internally the right muscles to be prepared for another ground, but in a way better shape in my point of view. So again, was not a training season for us, it was already a hard game last year, and I think it was good, you're right, to test and be prepared for what's coming.
+
+Operator
+
+Our next question comes from Gustavo Troyano from Itau BBA.
+
+Gustavo Troyano
+Itaú Corretora de Valores S.A., Research Division
+
+My question relates to capital allocation. And how should we think about your approach towards dividends throughout the year? Last year, you paid interim dividends on a quarterly basis, but I just wanted to touch base on how you're thinking about the policy for this year, not only in terms of the final payout target, but also on the timing of the distributions throughout the year. So it would be nice to understand if we should expect dividends being concentrated towards the end of the year as we were used to see until 2024 or if there is something new towards this discussion?
+
+Guilherme Fleury de Figueiredo Parolari
+Chief Financial, Investors Relations & Shared Services Officer and Member of Executive Board
+
+Thank you for the question. Let me just start highlighting again what we have done in '25. I think you have seen a very proactive discussion that we have had with Lisboa and our Board here to make sure that we are able to change the payout or return to shareholders on a consistently basis quarter after quarter on last year. On this quarter or beginning of this quarter, Lisboa just mentioned on his beginning introduction that we're also paying part of the IOC that we've approved with the Board at the end of 2025.
+
+I cannot -- this is not a guidance. I cannot tell you how that will come over the year. But what I can say as a CFO that we continue to have every quarter discussions. We continue to look into our cash position, the cash generation on our side, taking into consideration always the 3 points of our capital allocation, invest in organic growth, look into selective M&A and deliver sustainable shareholder return over time.
+
+Operator
+
+Our next question comes from Thiago Duarte from BTG Pactual.
+
+Thiago Duarte
+Banco BTG Pactual S.A., Research Division
+
+Yes, in my question, I wanted to circle back to some of the topics I think we discussed a year ago, right after the return of both of you to Ambev and things that are related to the strategic vision that you shared with us at the time, and I wanted to comment, if possible, in light of not only the quarter, but I think 2025 results as a whole. The first one is to you, Lisboa, when you referred to make, I remember a year ago, bigger investments in the core brands as part of your analogy of making the company more ambidextrous and fostering the category growth. You mentioned briefly about elevating the core in your initial remarks.
+
+But when we look at the portfolio and the way it performed throughout the year, it appears that was premium, not the core that really stood out. So I wanted to hear how you think core stands a year later in terms of potential or whether you think it will continue to be gradually eclipsed by the premium brands and the portfolio will be somewhat transitioning more into premium and core losing relevance. So that would be the first of the topics we discussed a year ago.
+
+And the second one is related to the portfolio itself. In the past, I don't know, 5 or 6 years, Ambev made lots of investments in innovation, introduced many new brands, you repositioned the pricing. And obviously, I think this led to higher costs and expenses to support that expansion. And I remember a year ago, you mentioning that you believe the portfolio was stronger and it was time to reap the benefits of these investments. So on the question of the SG&A dilution, whether you think what we saw this year is really related to that and obviously, the sustainability of that going forward, which you mentioned a little bit before in the previous question. So those will be the points.
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Thiago, nice to connect to you again. Look, one of the feedbacks we got from you all was about following the protocol, one answer only. So I'm going to get the first one. Okay, the first question. So based on the core question, what is the core role here for us? And I understand your point is more related to Brazil, given the fast growth rate we are delivering with the premium. I continue with my point of view, Thiago, regarding us being a company capable of managing ends not only one side of the portfolio partition especially because the part that you are alluding to the core, it is the stronger part of the industry.
+
+And if -- when you take in consideration the majority of the population in Brazil still rely pretty much on one minimum salary. The core has a meaningful play to gain in the game because it promotes accessibility to the category. On top of that Brazil is composed by different regions. Those regions is very interesting. I think I never told you that, but one of the things that caught my attention is how cyclical the portfolio is per region. So some places in Brazil that used to be a Brahma place today is an Antarctica place.
+
+Another one is a Skol place. And at a point in time, I told you guys, Skol is still a very relevant brand in several states of Brazil, here in Sao Paulo, for instance. So it's critical for us to protect that strength that our company has, the category has because somehow these brands, they represent the category. And there's plenty of room for us to make these brands very relevant in the future. How? Take as an example, what we are doing as we speak with Skol. We just brought to the game a new brand variant, which is Skol Zero Zero. We are not just following the zero trend. We are doing so with novelty because this brand extension brings something different from the others, zero alcohol, zero sugar.
+
+And this is the way, one of the ways we keep these brands relevant for our consumers in the future. And it's interesting because when you do so, when you find a way to be really ambidextrous is when you see the full potential coming to life. I'm going to give one example, which is the last quarter of last year this is when we saw the full potential of our portfolio coming to [indiscernible] because the share gain not only came from the new partitions being premium, being nonalcohol or being balanced, it came from the core as well.
+
+And coincidentally or not, this was the time when we started to see Skol also stabilizing, gaining momentum, especially in those states where we put more emphasis behind the brand. So -- and as a consequence, our share improved not only through the segments, but also through the channels and also through regions in Brazil. And this is what we want because we believe that our strength relies on the portfolio strength, and this is the game we want to play. And the core side of the business plays a very meaningful role there.
+
+Guilherme Fleury de Figueiredo Parolari
+Chief Financial, Investors Relations & Shared Services Officer and Member of Executive Board
+
+And Lisboa, if I can just add like one thing here, Thiago, quickly. I think connected with the strength of our portfolio, core was more impacted by, I would say, weather-impacted occasions, which were not fundamentally impacting the category. And with the other side of the portfolio, we led where the category expanded. And that's where we came with the bulk of the growth in premium and zero in Brazil.
+
+Operator
+
+Our next question comes from Renata Cabral from Citi.
+
+Renata Fonseca Cabral Sturani
+Citigroup Inc., Research Division
+
+My question is related to GLP-1 drugs and the potential impact on company's portfolio. We are seeing the discussion a lot developed in the U.S. Of course, the penetration of the drug has been much higher than in Brazil. So my question for you is the weakness of the portfolio this year somehow can be attributed to that. And more than that, since in March, one of the patents will expire in Brazil. So the usage can expand in 2026 or maybe '27. What is the expectations of impact in the portfolio and what the company is working to mitigate that and offer other options to consumers, not only in beer but also in the portfolio?
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Renata, thank you for the question. I think it's always important to go back to '25 in order to really understand what happened. There are 2 different kinds of impact. One is attitudinal change. The other one is behavioral change. What happened last year was a change on the behavioral side due to the weather, mostly, okay? When you have bad weather when you have colder and longer winter time, the most important drinking occasion in Brazil, which is the out-of-home among friends sharing beer is the one mostly impacted. And this is what explains the majority of the drop that we saw last year. And by the way, as explained by Fleury, the brands that depend the most on this occasion are core brands. And that's the reason why you saw the core brands somehow following what happened with the industry, okay?
+
+So what is good about that is the fact that even with such a challenging circumstance context we measure the attitudinal side of our consumers regarding the category constantly. And we see not only protection of the relationship between consumers and the category, but with those that are more -- that are closer to the category, we saw a strength, which doesn't mean that those that are more unfrequent consumers, sporadic consumers do not fluctuate.
+
+And for those consumers, we are working with a very versatile category to attend more needs and trends. That's the reason why you see us developing zero alcohol beer. We are developing functional beers like gluten-free, lower calories. And we are also attending those consumers with more sweet flavor beers like Flying Fish that we introduced last year. So regarding the point about the GLP-1, we haven't observed any meaningful impact on our business. But like any other emerging trend, it requires time, more evidence, and as a consequence, I just want to say that we're going to keep monitoring and acting accordingly.
+
+Operator
+
+Our next question comes from Isabella Simonato from Bank of America.
+
+Isabella Simonato
+BofA Securities, Research Division
+
+I mean my question is about 2026 beer Brazil. I mean, as you mentioned, last year was quite challenging in terms of weather and occasions, and you highlighted several tailwinds this year, especially regarding that the World Cup and et cetera, more holidays as you mentioned in the past. But at the same time, you're coming -- your guidance probably shows that costs will grow above general inflation. And you're coming off from a base of SG&A that seems tough in the sense that, that was a very good performance in the last year. So when you balance things between maybe a more favorable backdrop and what you're facing internally, I wanted to hear your thoughts on your pricing strategy for 2026. And also if you could give us a little bit of a color on how should we think about mix, especially during the World Cup? And among those variables, across those variables, what do you think should be more relevant when we're thinking about volume growth for the year?
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Isabella, it's a long question. So let me take the point about pricing, which is very sensitive. So I'm going to try to answer without going to any -- a territory that we don't want. So our pricing has a mission composed by twofold. One side of the pricing story is keep our industry accessible. And the reason why for that is what I mentioned before. A good -- the majority of the population in Brazil still depend a lot on accessibility to be close to the category. So we must keep an eye on it. That's the reason why core has a role to play. That's the reason why packaging assortment has a role to play because we want to give them accessibility alternatives. If we rely only on premium, we're going to make their lives even harder.
+
+On the other side of the story, pricing has the role to protect our profitability moving forward. And as you know, we have an ambition to continue expanding margin in the -- ambition. The same way we anticipated to you in the beginning of last year. We keep this ambition alive and Fleury mentioned that in the beginning of the session. So we're going to -- we need to be always balancing the 2 sides of the story. So it's not an or, but it's an and game. The beauty about our situation today is when you look to our flywheel, first and foremost, our portfolio is more complete today. And it is complete regionally speaking. So it gives us alternatives to move forward with our revenue management strategy for the year.
+
+On the second side of the story, the second pillar of our strategy, you find the digital ecosystem. And I already mentioned to you all BEES is enabling us to strengthen our core business while creating new growth engines. On the first side of the story, go deeper on the core business. We are using technology to go more granular, to execute our revenue management strategy in a different way than we used to do before. We are more effective today than before in terms of dollar invested in promotions and so on and so forth. Our algorithms help us to recommend the right portfolio of brands for each type of point of sale and so on and so forth. By doing so, we not only improve our capacity to execute the pricing per se, but we also bring together a very interesting mix impact for the game.
+
+And the 2 together should be enough to offset what kind of impact we see on the COGS side as we did last year. That's pretty much the balance we have to keep in place every single day. And I must confess that the more we do it, the better we get. So again, similar to what I said before, I feel like last year was a very good acid test, stress test for us to be ready for the year to come.
+
+Guilherme Fleury de Figueiredo Parolari
+Chief Financial, Investors Relations & Shared Services Officer and Member of Executive Board
+
+And Lisboa, Fleury here, just to add one thing here, Isabella, when you look into our costs, another way of thinking about that cost and expenses, you look at that in a holistic way. You always do the resource allocation over and over, as Lisboa was mentioning, measuring returns from market promotions from everything that we do. And it's also fair to say that, as Lisboa mentioned, over time, we want to increase -- we have the ambition of increasing our margin. But most likely, we're not going to be able to do that every quarter because when you look into Pillars 1, 2 and 3, those will be maximized over time, but that's our long-term ambition. Looking to our costs, taking out of the equation what didn't make sense and refuel and reinvesting behind our brands. And that's what Lisboa mentioned as a flywheel. So that's what we want to continue to gain momentum over and over.
+
+Operator
+
+This does conclude the Q&A section. I will now hand the floor back to Lisboa for any closing remarks. Please go ahead, sir.
+
+Carlos Eduardo Lisboa
+CEO & Member of Board of Executive Officers
+
+Thank you for joining our call today. I would like to close reinforcing some messages. Our mission is to always strive for our better version. And we will do that by leading and shaping a loved category with clear headroom for growth. Advancing simultaneously on the 3 pillars of our strategy is what set us apart. 2025 stress tested our strategy, and we closed the year stronger and better prepared for what comes next. Thank you, and hope to see you soon. Enjoy carnival.
+
+Operator
+
+This does conclude today's presentation. You may now disconnect, and have a wonderful day.

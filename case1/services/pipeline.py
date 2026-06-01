@@ -46,7 +46,7 @@ class Pipeline:
 
     def run(self) -> None:
         current_period_data, past_period_data = self._ingest()
-        analysis = self.llm_wrapper.process(current_period_data, past_period_data)
+        analysis = self.llm_wrapper.analyse_data(current_period_data, past_period_data)
         self._dump_json(analysis)
         markdown = self.llm_wrapper.create_summary()
         self._dump_markdown(markdown)

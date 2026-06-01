@@ -64,3 +64,5 @@ eu faço a ingestão de APENAS texto, não detecto voz,então alguns nuances pod
 Agora ficou muito curto, preciso de uma relatório mais extenso, tem que discutir os aspectos falados na call, pense que um executivo vai tomar decisões com base nesse relatório final
 
 Outra coisa, esse surprise score esta muito vago, estabeleça benchmarks para explicitar o que é um surprise score de 10 por exemplo, o que é um 5, etc
+
+Cursor - gpt5.2 codex

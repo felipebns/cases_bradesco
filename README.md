@@ -1,0 +1,1 @@
+### Cases para processo seletivo do Bradesco BBI Equity Strategy, para rodar basta criar venv, baixar dependencias no requirements e rodar o main.py

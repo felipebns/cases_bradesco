@@ -9,7 +9,7 @@ class LLM_Wrapper:
         self.client = OpenAI(api_key=OPENAI_KEY)
         self.model = model
 
-    def process(self, current_period_data: json, past_period_data: json) -> str:
+    def analyse_data(self, current_period_data: json, past_period_data: json) -> str:
         data_input = data_input_template_process.format(
             current_period_data=json.dumps(current_period_data),
             past_period_data=json.dumps(past_period_data),

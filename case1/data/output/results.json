@@ -1,0 +1,81 @@
+{
+    "management_tone": {
+        "classification": "confident and execution-focused",
+        "change_vs_prior": "Tone shifted from reflective/defensive after a stress-tested year (prior period) to more forward-looking confidence grounded in operational momentum, cash generation and commercial execution in the current quarter.",
+        "justification_quotes": [
+            "In tough moments, great companies and cultures find a way to get stronger, and that is what this quarter begins to show.",
+            "We made meaningful progress on the mission we set from day 1, even in a dynamic context that stress tested our strategy."
+        ]
+    },
+    "guidance_changes": {
+        "summary": "Guidance was largely reaffirmed: Brazil Beer cash COGS per hectoliter (excluding marketplace) guidance maintained at a 4.5% to 7.5% increase for 2026. Management reiterated expectation that cost pressure should start easing from Q2 and reiterated ambition to expand consolidated margins while continuing share buybacks and IOC distributions.",
+        "changes_vs_prior": [
+            "Guidance unchanged versus prior quarter: prior call already communicated 4.5%–7.5% for Brazil Beer cash COGS per hectoliter and the same range is reiterated in the current quarter.",
+            "Current quarter adds clearer cadence messaging (Q1 expected to be the high-cost point and costs should start easing from Q2) compared with prior call where discussion was more about full-year pressure and H1 weighting."
+        ],
+        "themes_vs_prior": [
+            "Current quarter emphasizes operational momentum (volumes recovering in key markets, beer returning to growth in parts of footprint), stronger cash generation (\"strongest first quarter performance in the past 10 years\") and commercial execution (platform-driven price/mix improvements).",
+            "Prior quarter emphasized resilience after a stress-tested 2025, portfolio strengthening and preparing for 2026 (World Cup) — themes are consistent, but current call is more focused on translating that into near-term P&L and cash flow execution."
+        ]
+    },
+    "top_analyst_questions": [
+        {
+            "question": "My question is about net revenue per hectoliter in Brazil Beer. For us, at least it was the main highlight of the quarter, especially given how your volumes outperformed. So if you could qualify the 8% year-on-year increase, what drove that in terms of the contribution from mix? Any contribution from price increases in case they took place in the first quarter would also be very helpful. And also seasonally, Q1 usually has a weaker pricing than Q4, right, because of state taxes in Brazil. if there was anything different in this ICMS dynamic this year that may also, in part, explain the pricing performance in Brazil Beer. That would be my question.",
+            "response_summary": "Management attributed the net revenue per hectoliter increase to three hierarchical components: (1) carryover from the 2025 revenue management agenda into 2026 (an easier comp vs '24→'25), (2) continued execution of the revenue management agenda in 2026, and (3) mix (growth in above-core/premium and balanced choices). Management said there was nothing material to report on taxes (ICMS) in the quarter.",
+            "response_quality": "Medium-high: Management provided a clear qualitative hierarchy (carryover, RGM execution, mix) and noted tax had no material impact, but they did not provide a precise quantitative split between price vs. mix (no explicit percentage decomposition).",
+            "evidence_quotes": [
+                "And first and foremost, in terms of hierarchy, the first component is exactly the -- all the effort put behind our revenue management agenda in '25 and the carryover we brought into the first quarter of '26.",
+                "Keep in mind that from '24 to '25, we didn't have pretty much a carryover, right? So in other terms, it is an easier comp.",
+                "And just to complement here, Henrique, Fleury. On the tax side, there was nothing that was important to highlight during the quarter. So same as last year."
+            ]
+        },
+        {
+            "question": "How confident are you that we are cycling through the toughest comparison base and that volumes can grow in the balance of 2026 (given weather, World Cup and calendar effects)?",
+            "response_summary": "Management corrected the framing (said industry was cycling through the toughest comp), reiterated view that the volume weakness is cyclical/occasion-driven (weather was main drag), and expressed cautious confidence that calendar tailwinds (holidays, World Cup) plus lower weather impact and portfolio momentum support a gradual recovery across 2026. They flagged household income pressure as an ongoing watch item but stressed category resilience.",
+            "response_quality": "Medium: Answer is logically consistent and grounded in drivers (weather, occasions, calendar), with explicit acknowledgement of remaining risks (income pressure). It is qualitative rather than providing a quantified volume-path or probabilities.",
+            "evidence_quotes": [
+                "First, actually, the industry is cycling through the toughest comparison base, not the easiest comparison base, right?",
+                "the issue was not whether consumers wanted beer, but how often the right occasions happen, right, given the fact that what mostly impacted the industry were cyclical drivers... being the most relevant impact coming from the weather.",
+                "We do expect that, first and foremost, the calendar will bring a pretty interesting right ground for the industry to continue recovering moving forward, right? A combination of long holidays, a combination of FIFA World Cup..."
+            ]
+        },
+        {
+            "question": "Can you help us understand and frame the COGS cadence throughout the year given current environment and hedges (aluminum etc.) — how should we think about cost flow-through and hedges for the rest of the year?",
+            "response_summary": "Management reiterated the full-year Brazil Beer cash COGS per hectoliter guidance of +4.5% to +7.5%, said Q1 is likely the peak on cost and costs should ease starting in Q2, and highlighted ongoing cost-efficiency initiatives and non-speculative hedging but did not provide detailed hedge ratios or exact commodity hedge coverage.",
+            "response_quality": "Medium: Firm on maintained guidance and offered cadence (Q1 peak → easing from Q2) and qualitative description of hedging/project work, but lacked detailed quantitative disclosure on hedge coverage or commodity-by-commodity sensitivity.",
+            "evidence_quotes": [
+                "When we're starting '26, what we have said to the market is our range between 4.5% for Brazil Beer cash COGS per hectoliter, excluding marketplace from 4.5% to 7.5%.",
+                "We know... Q1 is probably the highest on cost, and that should start easing through the second quarter onwards.",
+                "we have our hedges, which give us a very good visibility on the forecast going forward... our hedging, which is nonspeculative, when we look at the commodities..."
+            ]
+        }
+    ],
+    "red_flags": [
+        {
+            "type": "evasao",
+            "quote": "I will keep the protocol. I'm going to answer 1 question to give you all the chance to interact with us, okay?",
+            "rationale": "Management declined to address multiple parts of an analyst's question (World Cup timing and competitor pricing) and limited the interaction to one question, which deflects full disclosure on follow-ups and could obscure detail the market wanted."
+        },
+        {
+            "type": "hesitacao",
+            "quote": "the first component is exactly the -- all the effort put behind our revenue management agenda in '25 and the carryover we brought into the first quarter of '26.",
+            "rationale": "Mid-sentence pause/dash suggests a phrasing hesitation when describing the drivers of the key metric (net revenue per hectoliter); coupled with lack of a numeric split, this indicates some uncertainty or reluctance to quantify components precisely."
+        },
+        {
+            "type": "evasao",
+            "quote": "I cannot -- this is not a guidance. I cannot tell you how that will come over the year.",
+            "rationale": "In the prior-period call management explicitly refused to provide clarity on dividend/timing expectations, signaling limited forward granularity on capital return timing; similar guarded language appears elsewhere and limits read-through for investors."
+        }
+    ],
+    "surprise_score": {
+        "score": "7",
+        "items": [
+            "Brazil Beer volumes grew 1.2% in the quarter while industry was described as down mid-single digits (company outperformance).",
+            "Strong operational cash flow: \"strongest first quarter performance in the past 10 years\" (cash flow from operating activities BRL 3.2 billion, BRL 2 billion higher YoY).",
+            "Double-digit normalized EBITDA growth (10.1% cited by management) and consolidated top line growth of 9.6% despite FX/commodity headwinds.",
+            "Board-approved IOC payment tranche of BRL 1.2 billion and a new IOC declaration of BRL 700 million (shareholder returns activity).",
+            "Zé Delivery GMV grew high single digit and platform metrics (16 million orders, 5 million MAUs) highlighting faster D2C traction."
+        ],
+        "justification": "These items are notable relative to a market that had been focused on cyclical weakness: (1) the positive Brazil Beer volume outperformance versus an industry described as weak stands out; (2) unusually strong Q1 operating cash flow (described as the strongest in 10 years) and continued aggressive shareholder returns are more favourable than a straight 'wait-and-see' outcome; (3) sustained EBITDA expansion despite input-cost pressure is better-than-feared execution. The company reiterated guidance rather than raising it, so surprises are operational/flow-through rather than guidance changes."
+    }
+}

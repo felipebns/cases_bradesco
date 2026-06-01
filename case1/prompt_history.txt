@@ -35,3 +35,28 @@ eu obtive uma resposta vazia, o problema pode ser que estou limitando demais os 
 [ResponseReasoningItem(id='rs_0f84755c5a13f5d8006a1cf60f1d1c819694aee38b72794e0f', summary=[], type='reasoning', content=None, encrypted_content=None, status=None)]
 (venv) [fbns@archlinux case1]$ 
 a chave de API com certeza esta correta, aumentei para 100 tokens e agora voltou isso
+
+Perfeito, o que eu preciso agora é o seguinte, crie um input com o current_period_data e o past_period_data (pode ser dentro de prompts) e um prompt para processar esses dados. De modo que que a resposta da LLM seja um json com as informações pedidas na descrição do case por favor
+
+mas vc esta colocando o prompt no input, eu pensei em ter um input e um prompt separado, faz mais sentido ? 
+
+Perfeito, corrija algumas coisas para mim por favor, primeiro que esse json não esta no formato que eu quero. Ainda, o prompt pode melhorar, uma grande questão é que eu preciso comparar varias questões da review anterior com a nova, precisa pegar muitas nuances. Altere o prompt de modo que a LLM consiga perceber mais essas seguintes coisas
+
+Tom geral do management com trechos da transcrição que justifiquem a classificação 
+◦ Mudanças de guidance e temas vs. trimestre anterior 
+◦ Top 3 perguntas mais críticas dos analistas e resumo de como o CFO/CEO respondeu 
+(qualidade da resposta) 
+◦ Red flags linguísticos: trechos que sinalizam hesitação, mudança de assunto, ou evasão 
+(com citação literal da transcrição) 
+◦ "Surprise score": o que foi anunciado/dito que provavelmente não estava no consenso 
+pré-call, com justificativa
+
+Perfeito, agora eu preciso fazer o dump do markdown, igual o json, como eu posso fazer o load disso ? implemente para mim por favor
+
+perfeito, acho que ficou bom já, mas o prompt pode melhorar e o relatório poderia ter elementos mais robustos de markdown, esta muito seco agora, garanta que ele sempre tenha 400 caracteres no maximo, ele não pode citar o outro json de que ele leu, não precisa falar 2 minutos (leitura), discuta apenas as noticicas por favor
+
+README com arquitetura, decisões de prompt engineering, e limitações identificadas.
+
+perfeito, por fim eu quero que vc faça isso para mim por favor, complete o README com essas especificações, as identificações que eu encontro de cara são que: 
+
+eu faço a ingestão de APENAS texto, não detecto voz,então alguns nuances podem passar despercebido, a ingestão de dados é bem manual ainda, eu copio e colo do seeking alpha e faço o tratamento na mão, embora não consuma muito tempo, é algo que pode ser automatizado, mas devido ao escopo relativamente simples do projeto não foi uma prioridade, eu faço 2 calls de LLM, que pode ser tanto uma força (responsabilidades separadas gera um output mais preciso) e uma fraqueza, aumentando o custo. A arquitetura é bem simples, main chama a Pipeline, que orquesta o llm_wrapper, os prompts e para onde o output vai. Classes simples para o core, o prompt enginnering foi necessário gastar tempo especificando como o json tem que sair e ênfase em comparar ao quartil anterior

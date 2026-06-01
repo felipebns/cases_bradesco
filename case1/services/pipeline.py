@@ -18,7 +18,7 @@ class Pipeline:
         
         return current_period_data, past_period_data
     
-    def _dump_json():
+    def _dump_json() -> None:
         pass
 
     def run(self) -> None:

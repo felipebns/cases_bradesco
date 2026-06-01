@@ -22,3 +22,16 @@ Olhando para o core do case1, eu preciso mesmo das perguntas do analistas sim, m
 Perfeito, dividi os dados nesse formato de json agora, mas sinto que esta faltando uma ligação entre quem pergunta e quem responde, vc pode, olhando o original, fazer uma pareamento de quais são as respostas de qual pergunta, pode colocar um tipo "id_pergunta" como chave se quiser
 
 Perfeito, agora que eu fiz a limpeza manual do quartil atual, preciso que vc faça a mesma coisa com o raw/processed para o q4_2025 por favor
+
+Estou tesatando uma chamada simples de API com a open ai, tem algo que eu posso fazer para consumir menos tokens, utilizando transformadores, etc ? 
+
+eu quero adicionar um max_output_tokens, usar um modelo mais leve, o que é esse chunking ? o contexto e o prompt vão ser o mais importante para esse caso, já que preciso ingerir os dados
+
+(venv) [fbns@archlinux case1]$ python main.py 
+(venv) [fbns@archlinux case1]$ 
+eu obtive uma resposta vazia, o problema pode ser que estou limitando demais os tokens ? não consumiu nada do meu fundo na open ai tambem
+
+(venv) [fbns@archlinux case1]$ python main.py 
+[ResponseReasoningItem(id='rs_0f84755c5a13f5d8006a1cf60f1d1c819694aee38b72794e0f', summary=[], type='reasoning', content=None, encrypted_content=None, status=None)]
+(venv) [fbns@archlinux case1]$ 
+a chave de API com certeza esta correta, aumentei para 100 tokens e agora voltou isso

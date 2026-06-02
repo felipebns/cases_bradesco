@@ -1,1 +1,31 @@
 Beleza, esse aqui é o meu próximo case, para dar inicio eu queria discutir algumas possibilidades, estou pensando em fazer o seguinte no item 2, que é o maior gargalo, para o 2a uso uma IA para detercar esses setores, uma vez que eles foram detectados, eu faço uma análise determinística usando os dados de tickers publicos para o 2b e 2c, o output do 3 também seria uma IA, o que vc acha disso ? planejo usar o yfinance para tal
+
+o meu código esta estruturado assim por enquanto, o meu primeiro passo é fazer o parsing de um cenario macro economio para em "palavras chaves", como inflação, pib, juros, etc. O que eu preciso agora é como se uma mapa de palvras chaves -> setor, por exemplo, o usuário vai colocar como input "aumento da taxa Selic em 3%" e eu preciso ter uma IA que percebe essas palavras chaves e encaixa elas no meu mapa, mas eu também preciso de ajuda para montar esse mapa, me ajude com isso aqui por favor
+
+perfeito, com esse mapa feito, o que eu desejo fazer agora é o seguinte, de modo deterministico, eu quero ter dados históricos desses indicadores macro economicos e procurar correlação entre eles e o quanto tickers da ibovespa subiram ou desceram para poder justificar quais os top3 melhores e piores tickers, onde que eu posso arrumar esses dados, os tickers pegarei do yfinance mesmo, mas preciso dos indicadores. Então no caso eu ia precisar também de um novo mapa, que seja tipo setores -> tickers. De modo que o fluxo completo até agora é Descrição -> Setores -> tickers -> top3 ? 
+
+gostaria de fazer o seguinte então, faça um sistema de score que atribui pesos para cada setor afetado para um acontecimento macro economico, reescreva o mapa para contar com isso então
+
+perfeito, crie um dicionario com todos os setores, com um score inicialmente de 0, a IA vai decidir quais evento macro acontecerem e vou acessar o peso desses dicts depois para fazer o score geral
+
+eu preciso ainda ser capaz de justificar pq esses setores estão sendo escolhidos, com esse sistema de score ainda é possível eu apresentar essa justificativa no final ? eu não quero ter que fazer outro parsing com IA para pensar em justificativa
+
+perfeito, eu fiz todos esses mapas agora, ta na hora de simplificar, estou abordando setores de mais, acho que o numero de indicadores esta bom, mas estou me enrolando com os setores, de uma limpada para mim por favor e mude o dict de score de setores para guardar as evidências de como esse score foi selecionado, pesos + whys
+
+em alto nivel o meu pipeline ficou assim agora, estou pivotando para fazer uma analise primeiro das ações e depois agrupar por setor, fica mais robusto, mas antes disso preciso fazer um prompt para parsear o input do usuario na LLM, eu vou considerar apenas 4 indicadores macroeconomicos: pib, inflação, juros e dolar. O que o prompt precisa fazer:
+
+Avaliar qual dessas metricas esta sendo afetada pelo cenario que o user vai colocar, se o usuario não comentar sobre uma métrica, assuma que ele não esta sendo afetada, eu quero retornar um dicionario que seja tipo
+
+
+
+{
+
+   "pib": nao_afetado,
+
+    "inflacao": afetado, etc ....
+
+}
+
+Beleza, vc entendeu a visão geral, mas agora preciso de uma pequena mudança, em vez de vc colocar afetado ou não afetado, preciso que vc coloque o VALOR da variação dessa métrica, por exemplo, o usuário vai falar que "o pib aumentou 2%", então vai ser "pib": 2, "inflacao": 0 .... etc, por favor
+
+Beleza, como que eu posso baixar essas metricas macroeconomicas, tem uma API para isso ? 

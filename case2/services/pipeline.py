@@ -1,10 +1,12 @@
 from services.llm_wrapper import LLM_Wrapper
+from services.stock_wrapper import StockWrapper
 import json
 
 class Pipeline:
     def __init__(self, user_scenery: str) -> None:
         self.user_scenery = user_scenery
         self.llm_wrapper = LLM_Wrapper()
+        self.stock_wrapper = StockWrapper()
 
     @staticmethod
     def _dump_json(response: str) -> None:
@@ -26,8 +28,29 @@ class Pipeline:
         with open(path, "w", encoding="utf-8") as f:
             f.write(response)
 
+    @staticmethod
+    def _group_context(best_stocks: list, worst_stocks: list, best_sectors: list, worst_sectors: list) -> dict:
+        return {
+            "best_stocks": best_stocks,
+            "worst_stocks": worst_stocks,
+            "best_sectors": best_sectors,
+            "worst_sectors": worst_sectors
+        }
+
     def run(self) -> None:
-        best_sectors, worst_sectors = self.llm_wrapper.process_best_worst_sectors(self.user_scenery)
-        best_tickers, worst_tickers = self.llm_wrapper.process_best_worst_tickers(best_sectors, worst_sectors)
-        risks = self.llm_wrapper.process_risks(best_sectors, worst_sectors, best_tickers, worst_tickers)
-        json, markdown = self.llm_wrapper.create_summaries(risks, best_sectors, worst_sectors, best_tickers, worst_tickers, self.user_scenery)
+        print("Starting pipeline execution...")
+        # ===============================================================
+        # input VAI ter que ter as 4 variáveis, depois buscar periodos mais semelhantes a esse cenário
+        # pib, inflação, selic(juros) e dolar -> calcular variação, identificar periodos que a variavel mudou na mesma taxa ou apenas direção
+        # baixa preço fechamento ações ibovespa, rotular qual setor ela pertence, peso cada papel diariamente
+        # avaliar quais ações subiram mais nesse periodo, agrupar por setor com todas as ações para avaliar, junto com o peso de cada ação
+        # ===============================================================
+
+        # affected_metrics = self.llm_wrapper.parse_input(self.user_scenery) #doene
+        macro_data = self.stock_wrapper.get_macro_metrics()
+        # stocks_data = self.stock_wrapper.get_stocks()
+        # periods = self.stock_wrapper.process_similar_macro_stock_scenario(stocks_data, macro_data, affected_metrics)
+        # best_stocks, worst_stocks = self.stock_wrapper.process_best_worst_tickers(periods)
+        # best_sectors, worst_sectors = self.stock_wrapper.process_best_worst_sectors(best_stocks, worst_stocks)
+        # context = self._group_context(best_stocks, worst_stocks, best_sectors, worst_sectors)
+        # risks = self.llm_wrapper.analyse_risk(context)

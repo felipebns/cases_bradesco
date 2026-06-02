@@ -29,3 +29,16 @@ Avaliar qual dessas metricas esta sendo afetada pelo cenario que o user vai colo
 Beleza, vc entendeu a visão geral, mas agora preciso de uma pequena mudança, em vez de vc colocar afetado ou não afetado, preciso que vc coloque o VALOR da variação dessa métrica, por exemplo, o usuário vai falar que "o pib aumentou 2%", então vai ser "pib": 2, "inflacao": 0 .... etc, por favor
 
 Beleza, como que eu posso baixar essas metricas macroeconomicas, tem uma API para isso ? 
+
+
+
+faz o seguinte então, ajuste o meu prompt para que eu passe apenas se esta subindo ou descendo, para simplificar um pouco o projeto
+
+Perfeito, meu desafio agora é o seguinte, os dados chegem em formato de json e preciso normalizar eles em semestres. O resultado final dos meus dados é algo que imagino assim:
+
+2016.1: selic: subiu, inflacao: desceu, dolar: subiu, pib: desceu
+2016.2: ... etc, até os tempos atuais
+
+eu só preciso saber a direção da variação, não o valor exato, então por favor, no final da função get_macro_metrics eu tenho que devolver um df com essa cara ja, montei uma estrutura simples dessa função e da ingestão dos dados, por favor complete para mim agora, uma sugestão é transformar esses values em um pd series e usar o rolling do pandas, imagino que isso deva funcionar
+
+mas tem uma questão também, tem dados que vem mensalmente, outros diariamente, vc esta ajustando para isso ? quando a variação foi muito pequena (entre -0.5 para 0.5) pode considerar estavel por favor

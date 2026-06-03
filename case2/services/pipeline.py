@@ -40,17 +40,20 @@ class Pipeline:
     def run(self) -> None:
         print("Starting pipeline execution...")
         # ===============================================================
-        # input VAI ter que ter as 4 variáveis, depois buscar periodos (semestre, pode ser que eu tenha que aumentar depois) mais semelhantes a esse cenário
+        # input VAI ter que ter as 4 variáveis, depois buscar por rolling semestres mais semelhantes a esse cenário
         # pib, inflação, selic(juros) e dolar -> calcular variação, identificar periodos que a variavel mudou na mesma taxa ou apenas direção
         # baixa preço fechamento ações ibovespa, rotular qual setor ela pertence, peso cada papel diariamente
         # avaliar quais ações subiram mais nesse periodo, agrupar por setor com todas as ações para avaliar, junto com o peso de cada ação
         # ===============================================================
 
-        # affected_metrics = self.llm_wrapper.parse_input(self.user_scenery) #done
-        macro_data = self.stock_wrapper.get_macro_metrics() #done
-        # stocks_data = self.stock_wrapper.get_stocks()
-        # periods = self.stock_wrapper.process_similar_macro_stock_scenario(stocks_data, macro_data, affected_metrics)
-        # best_stocks, worst_stocks = self.stock_wrapper.process_best_worst_tickers(periods)
+        affected_metrics = self.llm_wrapper.parse_input(self.user_scenery) #done
+        macro_data = self.stock_wrapper.get_macro_metrics() #done 
+        stocks_data = self.stock_wrapper.get_stocks() #done
+        periods = self.stock_wrapper.process_similar_macro_stock_scenario(macro_data, affected_metrics) #done
+        best_stocks, worst_stocks = self.stock_wrapper.process_best_worst_tickers(periods, stocks_data)
+        print(best_stocks)
+        print()
+        print(worst_stocks)
         # best_sectors, worst_sectors = self.stock_wrapper.process_best_worst_sectors(best_stocks, worst_stocks)
         # context = self._group_context(best_stocks, worst_stocks, best_sectors, worst_sectors)
         # risks = self.llm_wrapper.analyse_risk(context)

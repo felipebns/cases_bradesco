@@ -42,3 +42,18 @@ Perfeito, meu desafio agora é o seguinte, os dados chegem em formato de json e 
 eu só preciso saber a direção da variação, não o valor exato, então por favor, no final da função get_macro_metrics eu tenho que devolver um df com essa cara ja, montei uma estrutura simples dessa função e da ingestão dos dados, por favor complete para mim agora, uma sugestão é transformar esses values em um pd series e usar o rolling do pandas, imagino que isso deva funcionar
 
 mas tem uma questão também, tem dados que vem mensalmente, outros diariamente, vc esta ajustando para isso ? quando a variação foi muito pequena (entre -0.5 para 0.5) pode considerar estavel por favor
+
+o que eu preciso agora é o seguinte, baixar 10 anos de dados de tickers da bovespa para poder afirmar quais foram os mais impactados positivamente e negativamente. Por enquanto, quero que vc me de os tickers, ou pelo menos 100 da bovespa para considerarmos como um universo factivel, que eles sejam baixaveis pelo yfinance com 10 anos de dados
+
+Preciso mudar uma coisa na verdade, em vez de deixar um semestre fixo, preciso deixar uma janela de rolling semester, ai eu queria que no indice ficasse a data de inicio - fim dessa janela, vc pode alterar para ficar assim por favor. Isso nas metricas macro economicas
+
+Eu acabei de perceber uma coisa, o metodo que estou usando para averiguar se o valore tem uma variação maior ou menor que o desvio padrão esta errado para rotular ele como estavel esta errado, pq do jeito que estou fazendo eu assumo que a media da distribuição é 0, que não necessariamenente é o caso, se a média for 100 e o desvio padrão for 1, então eu faço uma comparação que não é justa, se o valor for 100.5, que deveria ser estavel, vai rotular como subiu ? é isso ? eu preciso subtrair o meu valor da média ? 
+
+Ta, a situação que estou agora é a seguinte, eu preciso de uma lista de ações da bovespa, que tenham dados dos ultimos 10 anos, com o peso de cada papel e rotular a qual setor da economia elas pertencem. O yfinance tem muitas ações com valores incompletos e não tenho o peso delas, oq vc sugere ?
+
+muda o meu prompt para que o dicionario final fique na ordem: selic, inflacao, dolar, pib
+ainda, eu não quero mais um numero, quero as 3 seguintes strings "estavel", "desceu" ou "subiu". Ajuste por favor
+
+me ajude com o filtre de ações por periodo por favor, preciso pegar a variação % do preço de fechamento de todas as ações (densconsidere Nan) dentro desse periodo que eu passei, mas estou tento problemas com multiindex slicing 
+
+da pra fazer isso com m loop a menos, se o filter stocks retornar apenas o slice direto, pode ter apenas um all returns, asism teria apenas 2 loops ? certo ?

@@ -1,6 +1,7 @@
 from services.config import OPENAI_KEY
 from services.prompts import parse_input_prompt
 from openai import OpenAI
+import json
 
 class LLM_Wrapper:
     def __init__(self, model: str = "gpt-5-mini") -> None:
@@ -21,7 +22,7 @@ class LLM_Wrapper:
         except Exception as exc:
             raise RuntimeError("Error during LLM processing.") from exc
         
-        return response.output_text
+        return json.loads(response.output_text)
 
     def analyse_risk(self, context: dict) -> str:
         pass

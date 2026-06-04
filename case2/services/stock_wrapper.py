@@ -117,7 +117,7 @@ class StockWrapper:
         self.base_url = f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{{CODE}}/dados?formato=json&dataInicial={self.start}&dataFinal={self.end}"
 
     @staticmethod
-    def _normalize_in_semesters(values: list, key: str) -> dict:
+    def _normalize_in_semesters(values: list) -> dict:
         df = pd.DataFrame(values)
         df["data"] = pd.to_datetime(df["data"], format="%d/%m/%Y", errors="coerce")
         df["valor"] = pd.to_numeric(df["valor"], errors="coerce")
@@ -132,22 +132,15 @@ class StockWrapper:
         )
 
         rolling_mean = series.rolling(window=6).mean().dropna()
-        diff = rolling_mean.diff().dropna()
 
-        diff_mean = diff.mean()
-        diff_std = diff.std()
-
-        direction = diff.apply(
-            lambda v: "estavel"
-            if abs(v - diff_mean) <= (diff_std / 2)
-            else ("subiu" if v > diff_mean else "desceu")
-        )
+        pct_variation = rolling_mean.pct_change() * 100
+        pct_variation = pct_variation.dropna()
 
         result = {}
-        for end_date, value in direction.items():
+        for end_date, value in pct_variation.items():
             start_date = (end_date - pd.DateOffset(months=5)).replace(day=1)
             label = f"{start_date.strftime('%Y-%m-%d')}/{end_date.strftime('%Y-%m-%d')}"
-            result[label] = value
+            result[label] = round(float(value), 2)
 
         return result
     
@@ -184,21 +177,19 @@ class StockWrapper:
 
         for key, value in codes.items():
             adj_url = self.base_url.format(CODE=value)
-            values = requests.get(adj_url).json()
-            values = self._normalize_in_semesters(values, key)
-            dfs[key] = values
+            raw_values = requests.get(adj_url).json()
+            dfs[key] = self._normalize_in_semesters(raw_values)
 
         df = pd.DataFrame(dfs)
         df.index.name = "periodo"
         df = df.dropna(how="any")
         return df
         
-    def process_similar_macro_stock_scenario(self, macro_data: pd.DataFrame, affected_metrics: dict) -> list:
+    def process_similar_macro_scenario(self, macro_data: pd.DataFrame, affected_metrics: dict) -> list:
         print("Starting to process similar macro scenaries...")
-        current_state = affected_metrics.values()
-        periods = macro_data[
-            (macro_data == current_state).all(axis=1)
-        ].index.tolist()
+        current_state = pd.Series(affected_metrics, dtype=float)
+        distances = (macro_data - current_state).abs().sum(axis=1)
+        periods = distances.sort_values().head(5).index.tolist()
         return periods
 
     def process_best_worst_tickers(self, periods: list, stocks_data: pd.DataFrame) -> tuple:
@@ -222,13 +213,23 @@ class StockWrapper:
                 all_returns[ticker].append(pct_return)
         
         avg_returns = {ticker: sum(rets) / len(rets) for ticker, rets in all_returns.items()}
-        sorted_by_return = sorted(avg_returns.items(), key=lambda x: x[1], reverse=True)
+        all_stocks_sorted = sorted(avg_returns.items(), key=lambda x: x[1], reverse=True)
 
-        best_stocks = [ticker for ticker, _ in sorted_by_return[:3]]
-        worst_stocks = [ticker for ticker, _ in sorted_by_return[-3:]]
-        return best_stocks, worst_stocks
+        best_stocks = [ticker for ticker, _ in all_stocks_sorted[:3]]
+        worst_stocks = [ticker for ticker, _ in all_stocks_sorted[-3:]]
+        return best_stocks, worst_stocks, all_stocks_sorted
 
-    def process_best_worst_sectors(self, best_stocks: list, worst_stocks: list) -> tuple:
-        pass
-
-
+    def process_best_worst_sectors(self, all_stocks_sorted: list) -> tuple:
+        sector_score = {}
+        for ticker, avg_ret in all_stocks_sorted:
+            if ticker in self.ticker_meta.keys():
+                weight, sector = self.ticker_meta[ticker]
+                if sector not in sector_score:
+                    sector_score[sector] = weight * avg_ret
+                else:
+                    sector_score[sector] += weight * avg_ret
+        
+        sorted_sectors = sorted(sector_score.items(), key=lambda x: x[1], reverse=True)
+        best_sectors = [sector for sector, _ in sorted_sectors[:3]]
+        worst_sectors = [sector for sector, _ in sorted_sectors[-3:]]
+        return best_sectors, worst_sectors, sorted_sectors

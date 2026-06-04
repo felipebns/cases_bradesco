@@ -27,4 +27,11 @@ class LLM_Wrapper:
     def analyse_risk(self, context: dict) -> str:
         pass
 
+    def generate_json(self) -> str:
+        pass
+    
+    def generate_report(self) -> str:
+        pass
+
+
 

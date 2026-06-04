@@ -57,3 +57,10 @@ ainda, eu não quero mais um numero, quero as 3 seguintes strings "estavel", "de
 me ajude com o filtre de ações por periodo por favor, preciso pegar a variação % do preço de fechamento de todas as ações (densconsidere Nan) dentro desse periodo que eu passei, mas estou tento problemas com multiindex slicing 
 
 da pra fazer isso com m loop a menos, se o filter stocks retornar apenas o slice direto, pode ter apenas um all returns, asism teria apenas 2 loops ? certo ?
+
+Vou voltar a uma ideia anterior aqui, altere o prompt para que o retorno não seja apenas a direção, mas sim a magnitude, no sentido de que vai subir 1%, descer 4%, etc. Ainda, se o usuário não especificar valor. chute uma magnitude com base na ênfase dele. Por fim, coloque os valores hardcoded no prompt das métricas no dia de hoje, para case o usuário fale "selic em 4%, o prompt ser capaz de saber que se a Selic hoje é 1, teve um aumento de 3%
+
+Outra coisa, eu preciso ajustar o meu método para pegar os dados macro econômicos também, não quero colocar apenas uma target qualitativa, agora eu qeuro colocar a variação percentual entre 2 janelas de 6 meses, diferente do diff que ta agora, ficaria com pct_change ?
+Reescreve o método por favor 
+
+eu já montei essa função para fazer o calculos dos melhores setores, eu só quero que vc arrume o retorno para mim por favor, retorno os 5 melhores e os 5 piores de desempenho, verifique se essa minha conta esta certa ainda porfavor, pq eu sinto que os numeros estão sendo um pouco irrealistas, no crescimento de um setor.

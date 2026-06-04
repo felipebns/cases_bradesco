@@ -49,11 +49,21 @@ class Pipeline:
         affected_metrics = self.llm_wrapper.parse_input(self.user_scenery) #done
         macro_data = self.stock_wrapper.get_macro_metrics() #done 
         stocks_data = self.stock_wrapper.get_stocks() #done
-        periods = self.stock_wrapper.process_similar_macro_stock_scenario(macro_data, affected_metrics) #done
-        best_stocks, worst_stocks = self.stock_wrapper.process_best_worst_tickers(periods, stocks_data)
+        periods = self.stock_wrapper.process_similar_macro_scenario(macro_data, affected_metrics) #done
+        best_stocks, worst_stocks, all_stocks_sorted = self.stock_wrapper.process_best_worst_tickers(periods, stocks_data) #done
+        best_sectors, worst_sectors, sorted_sectors = self.stock_wrapper.process_best_worst_sectors(all_stocks_sorted) #done 
+        # print(all_stocks_sorted)
         print(best_stocks)
-        print()
         print(worst_stocks)
-        # best_sectors, worst_sectors = self.stock_wrapper.process_best_worst_sectors(best_stocks, worst_stocks)
+        print()
+        print(best_sectors)
+        print(worst_sectors)
+        # print(sorted_sectors)
+
         # context = self._group_context(best_stocks, worst_stocks, best_sectors, worst_sectors)
         # risks = self.llm_wrapper.analyse_risk(context)
+        # self.llm_wrapper.generate_json()
+        # self.llm_wrapper.generate_report()
+
+        # Visulização stocks na interface streamlit
+        # No final usar uma ia parar justifcar a escolha dos stocks e os setores, juntando métricas quantitativas com lógica

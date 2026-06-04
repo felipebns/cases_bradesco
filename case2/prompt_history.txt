@@ -64,3 +64,9 @@ Outra coisa, eu preciso ajustar o meu método para pegar os dados macro econômi
 Reescreve o método por favor 
 
 eu já montei essa função para fazer o calculos dos melhores setores, eu só quero que vc arrume o retorno para mim por favor, retorno os 5 melhores e os 5 piores de desempenho, verifique se essa minha conta esta certa ainda porfavor, pq eu sinto que os numeros estão sendo um pouco irrealistas, no crescimento de um setor.
+
+O que eu quero que vc faça agora é o seguinte, eu preciso fazer uma análise dos top 3 riscos das minhas previsões não se realizarem, eu mandei esse contexto inteiro para o processamento, junto com os periodos que o cenário macro econômico foi analizado, eu preciso que vc crie um promt para uma IA analisar esse contexto completo e devolver os top 3 riscos em um formato de json, deixe bem explicito para ela o que esta entrando dentro desse context, se ela quiser fazer uma análise para buscar algum motivo histórico notável dentro desses períodos é bem vindo. Faça esse prompt para mim por favor
+
+Beleza, agora com o retorno no risk e o contexto, eu preciso que vc crie um json final com uma chamada de LLM, para que, adicione justificativas e mecanismos de transmissão, explicando as ações e setores que foram evidenciados, conforme foi pedido o enunciaod, e devolva um json pronto para ser lançado, por fim, eu preciso fazer uma ultima chamada de LLM para criar o relatório em markdown a partir desse json, crie os prompts para isso por favor e complete as funções, só precisa chamar a LLM. 
+
+Perfetito, ultima coisa, o json tem que conter todas essas informações aqui obrigatioriamente, e o markdown precisa conseguir simplificar elas para 500 palavras, reforce isso por favor

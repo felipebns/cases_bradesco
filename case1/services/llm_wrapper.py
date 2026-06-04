@@ -9,24 +9,28 @@ class LLM_Wrapper:
         self.client = OpenAI(api_key=OPENAI_KEY)
         self.model = model
 
+    def _call_llm(self, system_prompt: str, user_input: str) -> str:
+        try:
+            response = self.client.responses.create(
+                model=self.model,
+                input=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": user_input},
+                ],
+            )
+        except Exception as exc:
+            raise RuntimeError("Error during LLM processing.") from exc
+        
+        return response.output_text
+
     def analyse_data(self, current_period_data: json, past_period_data: json) -> str:
         data_input = data_input_template_process.format(
             current_period_data=json.dumps(current_period_data),
             past_period_data=json.dumps(past_period_data),
         )
         print("Starting LLM processing...")
-        try:
-            response = self.client.responses.create(
-                model=self.model,
-                input=[
-                    {"role": "system", "content": process_prompt},
-                    {"role": "user", "content": data_input},
-                ],
-            )
-        except Exception as exc:
-            raise RuntimeError("Error during LLM processing.") from exc
-
-        return response.output_text
+        response = self._call_llm(process_prompt, data_input)
+        return response
 
     def create_summary(self) -> str:
         path = "data/output/results.json"
@@ -41,17 +45,7 @@ class LLM_Wrapper:
             recent_analysis=json.dumps(recent_analysis),
         )
         print("Starting LLM summary...")
-        try:
-            response = self.client.responses.create(
-                model=self.model,
-                input=[
-                    {"role": "system", "content": summary_prompt},
-                    {"role": "user", "content": data_input},
-                ],
-            )
-        except Exception as exc:
-            raise RuntimeError("Error during LLM processing.") from exc
-        
-        return response.output_text
+        response = self._call_llm(summary_prompt, data_input)
+        return response
 
 

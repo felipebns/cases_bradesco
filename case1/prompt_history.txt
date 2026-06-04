@@ -65,4 +65,12 @@ Agora ficou muito curto, preciso de uma relatório mais extenso, tem que discuti
 
 Outra coisa, esse surprise score esta muito vago, estabeleça benchmarks para explicitar o que é um surprise score de 10 por exemplo, o que é um 5, etc
 
+Preciso que vc faça algumas melhorias no meu case 1 aqui por favor
+
+# MELHORIAS 
+# guidance changes com tabela de métrica avaliada, anterior vs posterior - Quantitativo
+# Métrica objetiva saber qual a melhor pergunta 
+
+tem esses fatores que achei interessante de adicionar, só preciso mudar o prompt para que no guidance a LLM busque alguma métrica objetiva para poder avaliar como a guidance de fato mudou, ou não mudou e citar ela e pensar em algo concreto para poder buscar qual a melhor pergunta por favor
+
 Cursor - gpt5.2 codex

@@ -24,7 +24,16 @@ SAIDA (JSON estrito) com o seguinte schema:
 	"guidance_changes": {
 		"summary": "string",
 		"changes_vs_prior": ["string", "string"],
-		"themes_vs_prior": ["string", "string"]
+		"themes_vs_prior": ["string", "string"],
+		"objective_metrics": [
+			{
+				"metric": "string",
+				"prior_period_value": "string",
+				"current_period_value": "string",
+				"delta": "string",
+				"evidence_quotes": ["string"]
+			}
+		]
 	},
 	"top_analyst_questions": [
 		{
@@ -50,8 +59,8 @@ SAIDA (JSON estrito) com o seguinte schema:
 
 INSTRUCOES ESPECIFICAS:
 - management_tone: classifique o tom do management no periodo atual e explique como mudou vs. o anterior.
-- guidance_changes: descreva mudancas de guidance e temas vs. trimestre anterior.
-- top_analyst_questions: selecione exatamente as 3 perguntas mais criticas; explique a qualidade da resposta.
+- guidance_changes: descreva mudancas de guidance e temas vs. trimestre anterior. Inclua uma tabela quantitativa com pelo menos 2 metricas objetivas, quando houver dados nas transcricoes.
+- top_analyst_questions: selecione exatamente as 3 perguntas mais criticas; explique a qualidade da resposta e use o seguinte critério para avaliar qual foi a melhor pergunta: Se a pergunta conseguiu extrair mais dados objetivos do gestor ou se ela conseguiu fazer ele revelar algo que não estava explicito.
 - red_flags: cite trechos literais que indiquem hesitacao, mudanca de assunto ou evasao.
 - surprise_score: itens que provavelmente nao estavam no consenso pre-call, com justificativa.
 

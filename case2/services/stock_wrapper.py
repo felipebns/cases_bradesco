@@ -220,6 +220,7 @@ class StockWrapper:
         return best_stocks, worst_stocks, all_stocks_sorted
 
     def process_best_worst_sectors(self, all_stocks_sorted: list) -> tuple:
+        print("Processing best sectors for macro scenary...")
         sector_score = {}
         for ticker, avg_ret in all_stocks_sorted:
             if ticker in self.ticker_meta.keys():

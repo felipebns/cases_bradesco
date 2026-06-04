@@ -1,23 +1,30 @@
-# Relatório Executivo — Resultados e Q&A (Q1 2026)
+# Relatório Executivo — Earnings Call (resumo)
 
 ## Resultado
-- Tom da gestão: **confiante com cautela operacional**, evoluindo de “resiliente/reflexivo” para foco em execução mantendo disciplina nos 3 pilares estratégicos.
-- **Net revenue/hl ≈ +8.3%** no trimestre, impulsionado por carryover e ações de revenue management e contribuição de mix (crescimento de above‑core/premium).
-- **Crescimento de EBITDA normalizado de dois dígitos** e **expansão de margem consolidada de ~60 bps**, apesar de pressões de FX e commodities.
-- **Geração operacional de caixa muito forte** — descrita como a melhor performance de 1º trimestre em 10 anos — permitindo continuidade de retornos ao acionista.
+- Gestão com tom **confiante e construtivo**, destacando ganhos de momento após tom defensivo no período anterior.  
+- Desempenho operacional chave:
+  - **Net revenue per hectoliter: +8,3% (Q1 2026)** vs referência prévia de 7,5% (FY2025).  
+  - **EBITDA: expansão de margem de 60 bps** no trimestre (vs 50 bps no ano anterior).  
+  - **Volumes Brazil Beer: +1,2%** no trimestre, superando expectativas setoriais.  
+  - **Fluxo de caixa operacional: BRL 3,2 bi**, +BRL 2 bi YoY — **melhor 1º trimestre em 10 anos**.  
+  - Pressão de custos: **cash COGS/hl consolidado +9% no período; Brazil Beer +14,6%**.
 
 ## Guidance
-- Orientação mantida: **Brazil Beer cash COGS/hl (ex‑marketplace) entre 4.5% e 7.5% para 2026** (sem alteração).
-- Capital allocation segue ativo: **programa de recompra em curso**; novo **IOC de BRL 700 milhões** + pagamento adicional de **BRL 1.2 bilhão (tranche)**.
-- Expectativa operacional: **Q1 tende a ser o mais pressionado em custos**, com alívio esperado a partir do 2º trimestre; avanços em hedges e iniciativas de eficiência em curso.
-- Continuidade do foco nos 3 pilares (categoria, digital/ecossistema, disciplina) e ênfase em momentum no início do ano (premium, balanced, non‑alcohol) e efeitos de calendário (Carnival, FIFA World Cup).
+- Sem alterações no guidance-chave: **Brazil Beer cash COGS/hl para 2026: +4,5% a +7,5%**.  
+- Gestão reitera objetivo de **expandir margem consolidada**, manutenção de **recompras de ações e pagamentos IOC** como prioridades de retorno de capital.  
+- Mensagem tática:
+  - **Q1 identificado como pico de pressão de custos**, com expectativa de alívio a partir de Q2.  
+  - Ênfase contínua em **revenue management e premiumização** como motores de nr/hl e margem.  
+  - Maior foco na **ecosistema digital (Zé Delivery, BEES)** para ativação e crescimento; cash flow está sendo usado para reinvestimento e retornos.
 
-## Riscos / Pontos de atenção
-- Comunicação parcial sobre retornos ao acionista: CFO evitou detalhar timing/formato futuro de pagamentos/dividendos — **falta de clareza sobre fluxo de desembolso ao longo do ano**.
-- Q&A limitado por protocolo (responder apenas 1 pergunta em parte das interações) — **reduzido aprofundamento em temas críticos**.
-- Ausência de decomposição numérica detalhada dos drivers do aumento do net revenue/hl e **sensibilidades aos preços de alumínio/hedges não explicitadas**.
-- Recuperação de volumes atribuída majoritariamente a fatores cíclicos (clima/ocasiões) — **dependência de calendário e execução comercial**, não de mudança estrutural imediata na demanda.
+## Riscos / sinais de cautela
+- Elevação material de custos em Q1 (COGS/hl) é uma **risco de curto prazo** que pressiona rentabilidade até ver confirmação de estabilização.  
+- Interações de gestão no Q&A apresentaram **restrições (responder apenas 1 pergunta)** e recusa em detalhar cronograma de dividendos/retornos, aumentando **opacidade sobre política futura de capital**.  
+- Falta de detalhamento granular sobre hedge/elasticidades de commodity deixa **exposição residual a flutuações de alumínio/FX**.
 
-## Sinais de surpresa
-- Itens surpreendentes (moderados): **net revenue/hl ~+8.3%**, **EBITDA normalizado + dois dígitos com +60 bps de margem**, e **fluxo de caixa operacional excepcional** que viabilizou recompras/IOC.
-- Impacto: resultados operacionais superaram expectativas táticas, mas **não alteraram o guidance central**, justificando avaliação de surpresa intermediária.
+## Sinais de surpresa (impacto)
+- Positivos: **nr/hl melhor que esperado (8,3%)**, **volumes Brazil Beer acima do consenso** e **fluxo de caixa excepcional** — indicam execução operacional robusta.  
+- Negativo: **COGS/hl em Q1 significativamente acima do ponto de referência (consolidado +9%; Brazil Beer +14,6%)**, representando choque de custo que justifica atenção até confirmação de queda nos trimestres seguintes.  
+- Evento major: World Cup historicamente adiciona **~0,3–0,4%** ao crescimento da indústria, com impacto concentrado em **Q2–Q3**; gestão destaca vantagem de plataformas digitais para ativação.
+
+Resumo final: resultados mostram **clara melhoria operacional e geração de caixa**, suportando margem e retornos, porém **short-term cost spike** e limitações nas divulgações deixam espaço para monitoramento próximo da evolução de custos e da clareza sobre política de capital.

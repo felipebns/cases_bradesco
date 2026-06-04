@@ -22,9 +22,6 @@ Resumo do fluxo:
 - Ingestão ainda manual: copia/cola do Seeking Alpha e tratamento manual. É possivel automatizar, mas não foi prioridade dado o escopo simples.
 - Duas calls de LLM: ajuda na separação de responsabilidades e pode melhorar precisão, mas aumenta custo e latência.
 
+## Com mais tempo eu faria: 
 
-# MELHORIAS 
-# Managemente tone: analise 2d com positivo-negativo X convicção-hesitação
-# guidance changes com tabela de métrica avaliada, anterior vs posterior - Quantitativo
-# Métrica objetiva saber qual a melhor pergunta 
-# Idealmente teria o preço da ação ao longo do call para comparar a variação de preço com comentario
+- Sistema de buscar o preço da ação ao longo da call, para comparar sua variação com o que esta sendo comentado em tempo real, podendo ver o surprise score agindo imediatamente

@@ -25,7 +25,7 @@ class Pipeline:
             f.write(response)
 
     @staticmethod
-    def _group_context(best_stocks: list, worst_stocks: list, best_sectors: list, worst_sectors: list, all_stocks_sorted: list, sorted_sectors: list, periods: list) -> dict:
+    def _group_context(best_stocks: list, worst_stocks: list, best_sectors: list, worst_sectors: list, all_stocks_sorted: list, sorted_sectors: list, periods: list, affected_metrics: dict) -> dict:
         return {
             "best_stocks": best_stocks,
             "worst_stocks": worst_stocks,
@@ -33,10 +33,11 @@ class Pipeline:
             "worst_sectors": worst_sectors,
             "all_stocks_sorted": all_stocks_sorted,
             "sorted_sectors": sorted_sectors,
-            "periods": periods
+            "periods": periods,
+            "affected_metrics": affected_metrics
         }
 
-    def run(self) -> None:
+    def execute(self) -> dict:
         print("Starting pipeline execution...")
         affected_metrics = self.llm_wrapper.parse_input(self.user_scenery)
         macro_data = self.stock_wrapper.get_macro_metrics() 
@@ -44,14 +45,28 @@ class Pipeline:
         periods = self.stock_wrapper.process_similar_macro_scenario(macro_data, affected_metrics)
         best_stocks, worst_stocks, all_stocks_sorted = self.stock_wrapper.process_best_worst_tickers(periods, stocks_data)
         best_sectors, worst_sectors, sorted_sectors = self.stock_wrapper.process_best_worst_sectors(all_stocks_sorted) 
-        context = self._group_context(best_stocks, worst_stocks, best_sectors, worst_sectors, all_stocks_sorted, sorted_sectors, periods)
+        context = self._group_context(best_stocks, worst_stocks, best_sectors, worst_sectors, all_stocks_sorted, sorted_sectors, periods, affected_metrics)
         risks = self.llm_wrapper.analyse_risk(context) 
         final_json = self.llm_wrapper.generate_json(risks, context)
         markdown = self.llm_wrapper.generate_report(final_json)
         self._dump_json(final_json)
         self._dump_markdown(markdown)
+        print("Pipeline execution completed.")
 
-        # MUDAR PARA FOCUS
-        # Visulização stocks na interface streamlit
-        # self critique loop ? 
-        # backtesting ?
+        return {
+            "affected_metrics": affected_metrics,
+            "context": context,
+            "risks": risks,
+            "final_json": final_json,
+            "markdown": markdown,
+            "best_stocks": best_stocks,
+            "worst_stocks": worst_stocks,
+            "all_stocks_sorted": all_stocks_sorted,
+            "best_sectors": best_sectors,
+            "worst_sectors": worst_sectors,
+            "sorted_sectors": sorted_sectors,
+            "periods": periods,
+        }
+
+    def run(self) -> None:
+        self.execute()

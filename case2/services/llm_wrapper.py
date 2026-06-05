@@ -4,6 +4,7 @@ from services.config import OPENAI_KEY
 from services.prompts import (
     analyse_risk_prompt,
     generate_output_json_prompt,
+    generate_output_json_self_critique_prompt,
     generate_report_prompt,
     parse_input_prompt,
 )
@@ -47,7 +48,21 @@ class LLM_Wrapper:
             "risks": risks,
         }
         response = self._call_llm(generate_output_json_prompt, json.dumps(payload))
-        return json.loads(response)
+        draft_json = json.loads(response)
+
+        critique_payload = {
+            "context": context,
+            "risks": risks,
+            "draft_json": draft_json,
+        }
+        critique_response = self._call_llm(
+            generate_output_json_self_critique_prompt,
+            json.dumps(critique_payload),
+        )
+        try:
+            return json.loads(critique_response)
+        except json.JSONDecodeError:
+            return draft_json
     
     def generate_report(self, final_json: dict) -> str:
         print("Generating markdown report...")

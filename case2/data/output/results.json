@@ -2,135 +2,136 @@
     "sectors": {
         "benefited": [
             {
-                "sector": "bancos",
-                "rationale": "Os bancos tendem a se beneficiar num cenário de recuperação doméstica e fluxo de capitais pela sensibilidade positiva à expansão do crédito, spread e comissões; isso é consistente com 'bancos' sendo o setor com maior soma em sorted_sectors (332.6053) e listado em best_sectors. Evidência adicional: janelas como 2024-11-01/2025-04-30 mostram concentração de performance em bancos na amostra.",
-                "transmission_mechanism": "Maior demanda por crédito e serviços financeiros amplia receitas recorrentes e alavanca lucros operacionais via alavancagem financeira e comissões."
+                "sector": "exportadoras",
+                "rationale": "O affected_metrics indica dólar +25,97% (\"dolar\": 25.97) e SELIC estável (\"selic\": 0). Com esse perfil, empresas exportadoras tendem a converter receitas em USD para mais reais, refletindo ganhos em BRL; sorted_sectors coloca 'exportadoras' como maior ganho (28.27%) nos períodos fornecidos, suportando a expectativa setorial.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 -> receitas faturadas em USD se convertem para maior BRL, elevando receita e EBITDA em moeda local; affected_metrics['selic']=0 reduz imediata compensação via taxa doméstica, então o impacto vem principalmente pela conversão cambial; evidência: sorted_sectors ['exportadoras': 28.27] e best_stocks inclui nomes exportadores."
             },
             {
-                "sector": "small_caps",
-                "rationale": "Small caps tendem a captar recuperação macro e múltiplos via re-rating quando melhora o apetite por risco doméstico; 'small_caps' aparece em best_sectors e tem alta soma em sorted_sectors (221.466), servindo como evidência de exposição positiva nos períodos analisados.",
-                "transmission_mechanism": "Melhora no fluxo estrangeiro e risco-país reduzido amplia valuation (multiple expansion) e alavancagem operacional nas pequenas empresas."
+                "sector": "papel e celulose",
+                "rationale": "O affected_metrics mostra dólar +25,97% e SELIC=0, cenário em que produtores de celulose com faturamento em USD (ou preços internacionais) tendem a ver aumento de receitas em BRL. SUZB3.SA aparece em best_stocks e sorted_sectors aponta 'papel e celulose' em 19.86% nos períodos analisados.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 implica maior conversão de receita em USD para BRL; preços internacionais de celulose somados ao câmbio elevam margens em BRL; evidência: best_stocks inclui SUZB3.SA e sorted_sectors mostra 19.86%."
             },
             {
-                "sector": "transportes",
-                "rationale": "Transportes se beneficiam de recuperação econômica e aumento de volumes domésticos e de comércio interno; 'transportes' consta em best_sectors e tem soma relevante em sorted_sectors (166.857), indicando sensibilidade positiva nos períodos analisados.",
-                "transmission_mechanism": "Crescimento de atividade aumenta utilização da capacidade e receitas por tonelada/passageiro, ampliando margens fixas pela alavancagem operacional."
+                "sector": "seguradoras",
+                "rationale": "Com affected_metrics mostrando dólar elevado (25.97) e SELIC=0, seguradoras podem se beneficiar de reavaliação de ativos financeiros e maior prêmio de risco doméstico, beneficiando resultados financeiros recorrentes; contexto lista 'seguradoras' entre best_sectors e há representantes no ranking (PSSA3.SA, BBSE3.SA).",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 e affected_metrics['selic']=0 -> potencial reprecificação de ativos/receitas financeiras em BRL e maior retorno sobre investimentos técnicos; evidência: best_sectors ['seguradoras'] e presença de PSSA3.SA/BBSE3.SA em all_stocks_sorted."
+            },
+            {
+                "sector": "construção civil",
+                "rationale": "Sorted_sectors mostra 'construção civil' com performance positiva (6.59%). Com affected_metrics indicando dólar alto (25.97) e SELIC=0, parte do efeito positivo pode vir de realocação de fluxo para ativos reais ou repricing de projetos localmente indexados, mas a ligação direta com câmbio é moderada.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 pode reduzir atratividade de importados e favorecer ativos real-econômicos em BRL; affected_metrics['selic']=0 limita efeito via taxa doméstica; evidência: sorted_sectors 'construção civil' 6.59 — evidência moderada/limitada para conexão direta com câmbio."
             },
             {
                 "sector": "óleo e gás",
-                "rationale": "Óleo e gás aparecem entre os setores com maiores somas em sorted_sectors (142.241), refletindo que janelas com preços elevados de commodities favoreceram players expostos a preços internacionais e câmbio; nos períodos 2020–2022 houve picos de commodities que servem como evidência para essa sensibilidade.",
-                "transmission_mechanism": "Precificação em dólar e efeito câmbio aumentam receitas em reais; alta do preço do petróleo eleva cash flow e margens para produtores/exportadores."
-            },
-            {
-                "sector": "mineração",
-                "rationale": "Mineração tem alta soma em sorted_sectors (124.374), indicando exposição positiva em períodos com preços de minério firmes (ex.: janelas de 2020–2022), o que reforça sua correlação com preços de commodities e câmbio favorável.",
-                "transmission_mechanism": "A elevação dos preços internacionais e depreciação do real incrementa receitas em reais e lucro operacional por baixo custo marginal de produção."
+                "rationale": "Sorted_sectors registra 'óleo e gás' com 6.53%. Com affected_metrics mostrando dólar +25,97, empresas com receitas atreladas a preços internacionais em USD tendem a ver aumento de faturamento em BRL nos períodos considerados.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 -> receitas ou preços internacionais denominados em USD convertidos para BRL elevam cash-flow; evidência: sorted_sectors ['óleo e gás': 6.53] e períodos que incluem movimentos cambiais."
             }
         ],
         "harmed": [
             {
-                "sector": "siderurgia",
-                "rationale": "Siderurgia aparece em worst_sectors e tem score negativo em sorted_sectors (-2.1271); esse setor é altamente sensível a preços de commodities (ferro e aço), custo de insumos e demanda industrial externa, fatores que o colocam como prejudicado nos cenários observados.",
-                "transmission_mechanism": "Queda no preço de aço/ferro ou aumento de custos (energia, minério) comprime margens e reduz geração de caixa em empresas capital intensive."
+                "sector": "shopping centers",
+                "rationale": "Worst_sectors inclui 'shopping centers' e sorted_sectors mostra -0.83. Com affected_metrics indicando dólar +25,97 e SELIC=0, espera-se pressão sobre renda real e consumo discricionário, afetando tráfego e locação em shoppings.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 pode reduzir poder de compra via pressão inflacionária sobre importados/insumos; affected_metrics['selic']=0 não sinaliza alívio via juros mais baixos — resultado provável: menor NOI e valuation de ativos de varejo; evidência: worst_sectors e sorted_sectors negativo."
             },
             {
-                "sector": "exportadoras",
-                "rationale": "Exportadoras estão em worst_sectors com score negativo (-8.7310), o que indica que mudanças adversas em commodities, câmbio ou demanda externa nos períodos analisados penalizaram esse grupo; as janelas 2020–2022 comprovam alta volatilidade de commodity/FX como fator crítico.",
-                "transmission_mechanism": "Variabilidade de preços internacionais e apreciação cambial reduzem receitas em reais e pressionam margens quando custos têm exposição doméstica."
-            },
-            {
-                "sector": "papel e celulose",
-                "rationale": "Papel e celulose constam em worst_sectors e têm o menor score em sorted_sectors (-13.0231), evidenciando forte sensibilidade a preços internacionais de celulose e custos de energia/logística nos períodos amostrados.",
-                "transmission_mechanism": "Queda nos preços internacionais ou custo logístico/energético elevado reduz receita em dólares e margens em reais para produtores intensivos em capital."
+                "sector": "alimentos e bebidas",
+                "rationale": "'Alimentos e bebidas' aparece em worst_sectors e sorted_sectors com -4.20. Com affected_metrics mostrando dólar elevado (25.97), insumos importados ou indexados ao câmbio podem ficar mais caros, comprimindo margens onde o poder de repasse é limitado.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 -> aumento de custo de matérias-primas importadas ou insumos cotados em USD, reduzindo margem bruta se repasse for limitado; evidência: worst_sectors ['alimentos e bebidas'], sorted_sectors negativo e presença de ABEV3.SA entre piores."
             },
             {
                 "sector": "varejo",
-                "rationale": "Varejo aparece com pontuação muito baixa/limítrofe em sorted_sectors (0.9029) e está sujeito a risco de demanda doméstica e crédito ao consumidor; porém a evidência é limitada nos arquivos fornecidos, portanto a sinalização de prejuízo é menos robusta que para os três piores setores.",
-                "transmission_mechanism": "Redução de consumo discricionário e aperto de crédito impacta giro, margens e necessidade de financiamento de estoque em empresas com alta alavancagem operacional."
+                "rationale": "Varejo figura entre worst_sectors e sorted_sectors registra -6.44. Affected_metrics com dólar +25,97 e SELIC=0 sugere potencial deterioração de renda real e aumento do prêmio de risco, prejudicando vendas e margem em negócios volume-dependentes.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 reduz poder de compra via preços; affected_metrics['selic']=0 não mitiga choque via política monetária na amostra atual — consequência: redução de vendas/maior custo de financiamento operacional; evidência: worst_sectors e all_stocks_sorted mostra ASAI3.SA e outros varejistas em posições baixas."
             },
             {
-                "sector": "construção civil",
-                "rationale": "Construção civil mostra score modestamente positivo em sorted_sectors (7.0687) mas pode ser prejudicada por alta de juros e retração do crédito imobiliário; a justificativa para inclusão entre 'prejudicados' baseia-se em sensibilidade a taxas e financiamento, porém reconhecer-se que a evidência no contexto é moderada.",
-                "transmission_mechanism": "Aumento de juros e restrição de financiamento reduz demanda por imóveis, aumentando estoques e pressionando margens em empresas capital intensive."
+                "sector": "bancos",
+                "rationale": "Sorted_sectors mostra 'bancos' com valor moderadamente positivo (2.89), logo a evidência direta de efeito negativo é fraca. Entretanto, com affected_metrics indicando dólar +25,97 e SELIC=0, existe risco condicional de piora de inadimplência e custo de funding se o choque cambial elevar prêmio de risco.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 pode aumentar risco macro e afetar qualidade da carteira; affected_metrics['selic']=0 limita resposta por taxa doméstica na amostra; evidência fraca/condicional: bancos com exposição a funding em moeda estrangeira ou alta carteira de crédito ao consumo podem ver provisões maiores."
+            },
+            {
+                "sector": "transportes",
+                "rationale": "Transportes aparece com 4.25 em sorted_sectors; a ligação com câmbio é plausível mas não robusta nos dados. Affected_metrics com dólar +25,97 pode elevar custos (combustível, peças importadas) e pressionar margens se não houver repasse.",
+                "transmission_mechanism": "affected_metrics['dolar']=25.97 -> aumento de custo operacional atrelado ao dólar (combustíveis, insumos importados); affected_metrics['selic']=0 reduz indicadores de resposta via política monetária; evidência: sorted_sectors 'transportes' 4.25 — conexão plausível porém limitada nos dados."
             }
         ]
     },
     "tickers": {
         "positive": [
             {
-                "ticker": "COGN3.SA",
-                "justification": "Cogna (COGN3.SA) é um player de educação com receita recorrente de mensalidades e contratos escolares/universitários, o que dá resiliência em cenários de volatilidade macro; sua presença em best_stocks (score 40.06) e a inclusão de janelas pós‑Covid (ex.: 2020-12-01/2021-05-31) sustentam que a amostra premiou modelos com receitas recorrentes. A natureza de baixo capex relativo e cobrança periódica torna o fluxo de caixa mais previsível e menos exposto a choques de curto prazo no consumo discrecionário."
+                "ticker": "SUZB3.SA",
+                "justification": "Affected_metrics mostra dólar +25,97 e SELIC=0; Suzano (SUZB3.SA) é produtor de celulose com exposição a preços internacionais e faturamento atrelado a USD, o que tende a aumentar receitas em BRL em cenário de câmbio elevado. Evidência direta sobre elasticidade preço/volume no contexto é limitada, mas SUZB3.SA está em best_stocks e o setor 'papel e celulose' aparece com 19.86% nos dados."
             },
             {
-                "ticker": "AXIA6.SA",
-                "justification": "AXIA6.SA está em best_stocks (score 34.87) e, correlacionada ao setor 'small_caps' (best_sectors), tende a se beneficiar de re-rating e recuperação do apetite por risco doméstico; por natureza, empresas/veículos small‑cap apresentam maior alavancagem operacional e sensibilidade positiva a melhora nos fluxos e valuation, o que explica sua exposição favorável nos períodos analisados. Observação: a contextualização setorial (small_caps em sorted_sectors com soma 221.47) é a principal evidência; há menos informação detalhada sobre o modelo específico da AXIA6 nos dados, portanto a justificativa tem evidência setorial mais do que operacional direta."
+                "ticker": "CMIG4.SA",
+                "justification": "Affected_metrics ('dolar': 25.97, 'selic': 0) indica câmbio elevado e taxa doméstica estável; CMIG4.SA, do setor elétrico/utilities, tem receitas reguladas e perfil de caixa previsível que tende a proteger EBITDA operacional em choques macro. Há evidência limitada no contexto sobre exposição cambial direta da companhia, portanto a magnitude do efeito é incerta."
             },
             {
-                "ticker": "SLCE3.SA",
-                "justification": "SLC Agrícola (SLCE3.SA) é um produtor agrícola com forte exposição a preços de commodities e câmbio, e nos períodos amostrados (ex.: 2020–2022) commodities estiveram em patamares favoráveis, o que explica seu alto ranking (score 33.82). Por sua natureza, receitas em dólar e baixa intensidade de capex marginal por safra permitem geração de caixa elevada em cenários de preços firmes e real depreciado; a presença em best_stocks valida que a amostra premiou esse tipo de exposição nesses períodos."
+                "ticker": "EMBJ3.SA",
+                "justification": "EMBJ3.SA aparece como top no ranking histórico fornecido. Com affected_metrics mostrando dólar +25,97, empresas com exposição a receitas em USD ou a benefícios de repricing local podem ser favorecidas; porém o contexto não detalha a estrutura de receita de EMBJ3.SA, então a evidência direta é limitada."
             }
         ],
         "negative": [
             {
-                "ticker": "WEGE3.SA",
-                "justification": "WEG (WEGE3.SA) é fabricante industrial e exportadora com exposição cíclica à demanda de bens de capital e sensibilidade a commodity/custos de energia; sua colocação entre worst_stocks (score -15.87) sugere que, nos períodos analisados, choques de demanda e compressão de margem penalizaram players capital intensive. Por natureza, WEG sofre com ciclos industriais, desalavancagem de utilização de capacidade e pressão de custos, tornando-a vulnerável em rotações away from cyclicals."
+                "ticker": "YDUQ3.SA",
+                "justification": "Affected_metrics registra dólar +25,97 e SELIC=0; YDUQ3.SA (educação privada) depende de demanda doméstica e crédito estudantil, logo choque que pressiona renda e confiança pode reduzir matrículas e aumentar provisões, afetando receita recorrente. Evidência: YDUQ3.SA está em worst_stocks com desempenho fortemente negativo nos períodos."
             },
             {
-                "ticker": "HAPV3.SA",
-                "justification": "Hapvida (HAPV3.SA) é operadora de saúde com margem dependente de regulação, reajustes de planos e custo médico/hospitalar; sua presença em worst_stocks (score -16.61) e o contexto de janelas misturadas indicam que pressões regulatórias ou compressão de coparticipação/reajustes reduziram rentabilidade. Intrinsecamente, o modelo depende de controle de sinistralidade e capacidade de repassar custos, fatores que o tornam sensível a deterioração do ambiente econômico e pressão regulatória."
+                "ticker": "COGN3.SA",
+                "justification": "Com affected_metrics indicando dólar elevado (25.97) e SELIC estável, COGN3.SA (educação) permanece sensível a ciclos de consumo e crédito; deterioração macro decorrente do choque cambial pode reduzir demanda e aumentar custo do capital, explicando sua posição entre os piores no ranking fornecido."
             },
             {
-                "ticker": "MGLU3.SA",
-                "justification": "Magazine Luiza (MGLU3.SA) é varejista altamente dependente de consumo discricionário, crédito ao consumidor e giro de estoque; na amostra está entre worst_stocks (score -24.44), refletindo forte sensibilidade a aperto do consumo e custos financeiros. Por natureza, altos níveis de working capital, elasticidade de demanda e exposição a financiamento ao consumidor tornam o negócio particularmente vulnerável em cenários de juros altos e deterioração do consumo."
+                "ticker": "ASAI3.SA",
+                "justification": "Affected_metrics mostra dólar +25,97; ASAI3.SA (varejo/cash-and-carry) opera com margens baixas e alta sensibilidade a volume. Pressão sobre consumo real e aumento de custo de importados/insumos atrelados ao câmbio pode reduzir vendas e margens, consistente com sua posição no final do all_stocks_sorted."
             }
         ]
     },
     "top_risks": [
         {
             "rank": 1,
-            "risk": "Mudança de regime macro (commodities, câmbio, juros e fluxo) que difere dos períodos históricos usados",
-            "why_it_matters": "As previsões dependem de comportamentos setoriais observados em janelas que incluem recuperação pós‑Covid e ciclos de commodity; um choque contrário (alta súbita de commodities, depreciação do real, ou reversão de fluxo estrangeiro/juros) beneficiaria setores hoje marcados como 'pior' e prejudicaria os 'melhores', invalidando a leitura.",
+            "risk": "Reação de política monetária e mudança de regime causada pelo choque cambial",
+            "why_it_matters": "O cenário assume SELIC estável (selic=0) enquanto o dólar sobe ~25,97%. Se a alta do câmbio for acompanhada por fuga de capitais ou perda de confiança, o BC pode elevar juros e gerar um regime de juros mais altos/volatilidade maior — comprimindo múltiplos e revertendo ganhos esperados em papéis que dependem de valuation ou fluxo doméstico. Isso pode invalidar a tese de que exportadoras/papel e celulose/seguradoras serão os melhores setores, afetando EMBJ3.SA, CMIG4.SA e SUZB3.SA.",
             "evidence_from_context": [
-                "periods: \"2020-12-01/2021-05-31\", \"2022-01-01/2022-06-30\", \"2021-11-01/2022-04-30\" (janelas com estímulos/pico de commodities)",
-                "sorted_sectors mostra 'siderurgia', 'exportadoras', 'papel e celulose' como piores — setores sensíveis a preço de commodities e câmbio",
-                "best_sectors: 'bancos', 'small_caps', 'transportes' — dependem de cenário interno e fluxo de capitais"
+                "affected_metrics: {\"dolar\": 25.97, \"selic\": 0}",
+                "best_sectors: [\"exportadoras\", \"papel e celulose\", \"seguradoras\"]",
+                "best_stocks: [\"EMBJ3.SA\", \"CMIG4.SA\", \"SUZB3.SA\"]",
+                "periods: [\"2018-02-01/2018-07-31\", \"2018-08-01/2019-01-31\", \"2022-11-01/2023-04-30\"]"
             ],
-            "historical_clue": "Períodos disponíveis incluem 2020–2022 (pandemia e recuperação/alta de commodities) e janelas recentes 2024–2025; isso sugere que a amostra mistura regimes distintos, logo uma mudança macro crítica teria grande efeito. Evidência histórica moderada, pois as janelas são poucas e carregam eventos atípicos.",
-            "impact": "alto",
-            "likelihood": "medio"
-        },
-        {
-            "rank": 2,
-            "risk": "Concentração excessiva em poucos papéis e setores (exposição idiossincrática elevada)",
-            "why_it_matters": "Top picks e o ranking setorial estão fortemente influenciados por poucos nomes/um setor dominante: queda idiossincrática (ex.: resultado operacional, governança, fluxo vendedor) em qualquer um dos top names ou no setor 'bancos' pode desmontar a previsão agregada.",
-            "evidence_from_context": [
-                "best_stocks: \"COGN3.SA\", \"AXIA6.SA\", \"SLCE3.SA\" com scores muito acima do restante (40.06, 34.87, 33.82)",
-                "sorted_sectors: 'bancos' com soma 332.6053 — claramente dominante sobre os outros setores",
-                "all_stocks_sorted mostra forte gap entre top 3 e a cauda (ex.: MGLU3.SA muito negativa)"
-            ],
-            "historical_clue": "A performance média foi puxada por poucos nomes (top 3 bem acima) — padrão típico de risco de dispersão. Evidência histórica forte em termos de concentração numérica, embora seja necessária verificação adicional de liquidez e volatilidade dos tickers.",
+            "historical_clue": "Os períodos listados incluem janelas com volatilidade cambial (2018, 2022) nas quais movimentos do dólar frequentemente levaram a ajustes de política e correções de mercado — evidência moderada no contexto; não é prova direta de alta de juros, mas suficiente para considerar risco de mudança de regime.",
             "impact": "alto",
             "likelihood": "alto"
         },
         {
-            "rank": 3,
-            "risk": "Rotações setoriais/reaquecimento dos setores hoje 'piores' que revertam a performance relativa",
-            "why_it_matters": "Se siderurgia, exportadoras e papel e celulose recuperarem (por alta de preços de commodities, demanda externa ou queda do real), a ordem de vencedores/derrotados observada nos períodos pode se inverter e prejudicar as escolhas que favorecem bancos e small caps.",
+            "rank": 2,
+            "risk": "Concentração excessiva em poucos papéis com desempenho puxado por nomes isolados",
+            "why_it_matters": "Os três papéis mais bem colocados (EMBJ3.SA 38.03%, CMIG4.SA 30.05%, SUZB3.SA 26.85%) destacam-se com spreads grandes sobre o restante do ranking. Se qualquer um desses sofrer choque idiossincrático (ex.: revisão de guidance, risco regulatório para utilities, variação de preço de celulose), a previsão agregada de desempenho pode falhar por dependência de poucos nomes.",
             "evidence_from_context": [
-                "worst_sectors: \"siderurgia\", \"exportadoras\", \"papel e celulose\" com scores negativos",
-                "worst_stocks incluem grandes reversíveis: \"WEGE3.SA\", \"MGLU3.SA\" com desempenhos muito negativos na amostra",
-                "sorted_sectors coloca 'bancos' muito à frente, o que aumenta sensibilidade a uma rotação"
+                "all_stocks_sorted: top 3 com retornos médios 38.03%, 30.05%, 26.85% e queda acentuada depois",
+                "best_stocks: [\"EMBJ3.SA\", \"CMIG4.SA\", \"SUZB3.SA\"]",
+                "sorted_sectors mostra forte concentração em exportadoras e papel e celulose (28.27% e 19.86%)"
             ],
-            "historical_clue": "Os períodos incluem 2022 (alta de commodities) e janelas de 2020–2021, quando ocorreram fortes rotações; essa história sugere que a performance relativa pode inverter com choques de preço/FX. Evidência histórica moderada a fraca sobre a duração potencial da rotação (os períodos são limitados e mistos).",
+            "historical_clue": "A estrutura do ranking indica que outperform foi puxado por poucos ativos nos períodos similares; essa é evidência forte no próprio dataset (grande gap entre top3 e restante).",
+            "impact": "alto",
+            "likelihood": "medio"
+        },
+        {
+            "rank": 3,
+            "risk": "Choque de commodity ou rotação setorial que inverte vencedores (exportadoras/papel e celulose) em desempenho negativo",
+            "why_it_matters": "Os setores previstos como melhores (exportadoras e papel e celulose) dependem de preços internacionais de commodities/pulp e de relação favorável câmbio/preços. Um choque adverso nos preços (ex.: queda abrupta do preço da celulose ou de commodities exportadas) ou uma rotação global de ativos pode fazer com que esses setores passem a underperformar, revertendo a lista de best_sectors e prejudicando SUZB3.SA e outros campeões.",
+            "evidence_from_context": [
+                "sorted_sectors: [\"exportadoras\": 28.27, \"papel e celulose\": 19.86]",
+                "best_stocks inclui SUZB3.SA (exposição direta a papel e celulose)",
+                "worst_sectors indicam exposição contrária (varejo, alimentos e bebidas) que poderia receber fluxos opostos em rotação"
+            ],
+            "historical_clue": "Nos períodos selecionados podem ocorrer rotações setoriais; a evidência direta de choque de commodities nos períodos fornecidos é fraca/ambígua, por isso este risco depende de eventos de preço externos não explicitados no contexto.",
             "impact": "medio",
             "likelihood": "medio"
         }
     ],
     "periods": [
-        "2024-11-01/2025-04-30",
-        "2024-12-01/2025-05-31",
-        "2022-01-01/2022-06-30",
-        "2021-11-01/2022-04-30",
-        "2020-12-01/2021-05-31"
+        "2018-02-01/2018-07-31",
+        "2018-08-01/2019-01-31",
+        "2022-11-01/2023-04-30",
+        "2024-02-01/2024-07-31",
+        "2024-06-01/2024-11-30"
     ]
 }

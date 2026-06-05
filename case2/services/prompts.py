@@ -1,47 +1,52 @@
 parse_input_prompt = """
-Você é um parser de cenários macroeconômicos para o Brasil.
+Voce e um parser de cenarios macroeconomicos para o Brasil.
 
-Sua tarefa é extrair a VARIAÇÃO PERCENTUAL esperada em relação ao baseline atual das seguintes variáveis macroeconômicas:
+Sua tarefa e extrair a VARIACAO em relacao ao baseline das seguintes variaveis:
 
 - selic
 - inflacao
-- dolar
 - pib
 
-BASELINE ATUAL (use estes valores como referência):
+Para o dolar, calcule a variacao percentual em relacao ao baseline, a menos que o usuario explicite uma variacao percentual.
 
-- selic = 14.40
-- inflacao = 4.39
-- dolar = 5.08
-- pib = 3.25 trilhões
+BASELINE ATUAL (use estes valores como referencia):
+
+- selic = 13.25%
+- inflacao = 5.09%
+- dolar = 5.16 (R$/US$)
+- pib = 1.90%
 
 Regras:
 
-1. Retorne apenas JSON válido.
+1. Retorne apenas JSON valido.
 2. Utilize exatamente as seguintes chaves e nesta ordem:
-   - "selic"
-   - "inflacao"
-   - "dolar"
-   - "pib"
-3. O valor de cada chave deve ser um número decimal.
-4. O valor deve representar a VARIAÇÃO PERCENTUAL em relação ao baseline atual.
-5. Quando o usuário fornecer um valor absoluto, calcule:
-
-   ((valor_cenario - valor_atual) / valor_atual) * 100
-
-6. Utilize valores positivos para aumentos e negativos para reduções.
-7. Se o usuário fornecer explicitamente uma variação percentual, utilize diretamente essa variação.
-8. Se a variável não for mencionada, retorne 0.
-9. Se o usuário não fornecer magnitude explícita, estime uma variação percentual com base na intensidade do texto:
-
-   - leve, pouco, marginal, discreto -> 5
-   - moderado, relevante -> 10
-   - forte, significativo -> 20
-   - muito forte, drástico, intenso -> 30
-
-10. Não faça comentários.
-11. Não inclua texto fora do JSON.
-12. Arredonde para no máximo 2 casas decimais.
+  - "selic"
+  - "inflacao"
+  - "dolar"
+  - "pib"
+3. O valor de cada chave deve ser um numero decimal.
+4. Para selic, inflacao e pib: o valor deve representar a DIFERENCA entre projecao e baseline, em p.p.
+5. Para dolar: se o usuario informar um valor sem "%", trate como valor absoluto (R$/US$)
+  e calcule a VARIACAO PERCENTUAL em relacao ao baseline.
+  Se ele explicitar "%", use a variacao percentual informada.
+  Formula do dolar (%): ((valor_cenario - valor_baseline) / valor_baseline) * 100
+6. Formula de selic, inflacao e pib (p.p.): valor_cenario - valor_baseline
+7. Se o usuario informar apenas direcao (sobe/cai) sem magnitude, estime a variacao:
+  - selic, inflacao, pib: use pontos percentuais (p.p.)
+    - leve, pouco, marginal, discreto -> 0.25 p.p.
+    - moderado, relevante -> 0.50 p.p.
+    - forte, significativo -> 1.00 p.p.
+    - muito forte, drastico, intenso -> 1.50 p.p.
+  - dolar: use variacao percentual
+    - leve, pouco, marginal, discreto -> 2.5%
+    - moderado, relevante -> 5%
+    - forte, significativo -> 10%
+    - muito forte, drastico, intenso -> 15%
+8. Se o usuario informar valor sem unidade em selic, inflacao ou pib, assuma que e "%".
+9. Se a variavel nao for mencionada, retorne 0.
+10. Nao faca comentarios.
+11. Nao inclua texto fora do JSON.
+12. Arredonde para no maximo 2 casas decimais.
 13. Sempre retorne as quatro chaves.
 
 Interpretações:
@@ -109,74 +114,58 @@ PIB:
 Exemplos:
 
 Entrada:
-"A Selic deve subir para 16% e o dólar cair para 4,90."
+"A Selic deve subir para 13,75% e o dolar cair para 4,90."
 
-Cálculo:
-
-Selic:
-((16.00 - 14.40) / 14.40) * 100 = 11.11
-
-Dólar:
-((4.90 - 5.08) / 5.08) * 100 = -3.54
-
-Saída:
+Saida:
 {
-  "selic": 11.11,
+  "selic": 0.50,
   "inflacao": 0,
-  "dolar": -3.54,
+  "dolar": -5.04,
   "pib": 0
 }
 
 Entrada:
-"O PIB deve crescer para 3,40 trilhões e a inflação recuar para 3,5%."
+"Inflacao em 4,8% e PIB em 2,3%."
 
-Cálculo:
-
-PIB:
-((3.40 - 3.25) / 3.25) * 100 = 4.62
-
-Inflação:
-((3.50 - 4.39) / 4.39) * 100 = -20.27
-
-Saída:
+Saida:
 {
   "selic": 0,
-  "inflacao": -20.27,
+  "inflacao": -0.29,
   "dolar": 0,
-  "pib": 4.62
+  "pib": 0.40
 }
 
 Entrada:
-"Economia forte e inflação pressionada."
+"Juros caem um pouco e dolar sobe forte."
 
-Saída:
+Saida:
 {
-  "selic": 0,
-  "inflacao": 10,
-  "dolar": 0,
-  "pib": 10
-}
-
-Entrada:
-"O Banco Central sinalizou cortes significativos de juros e o dólar deve se fortalecer."
-
-Saída:
-{
-  "selic": -20,
+  "selic": -0.25,
   "inflacao": 0,
-  "dolar": 10,
+  "dolar": 10.00,
   "pib": 0
 }
 
 Entrada:
-"Inflação sobe 8%, PIB cresce 3%, dólar cai 4%."
+"Dolar 5.40 e Selic 13,00%."
 
-Saída:
+Saida:
+{
+  "selic": -0.25,
+  "inflacao": 0,
+  "dolar": 4.65,
+  "pib": 0
+}
+
+Entrada:
+"Dolar em 6 e PIB em 3%."
+
+Saida:
 {
   "selic": 0,
-  "inflacao": 8,
-  "dolar": -4,
-  "pib": 3
+  "inflacao": 0,
+  "dolar": 16.28,
+  "pib": 1.10
 }
 """
 
@@ -194,17 +183,18 @@ O contexto recebido em `input` já vem serializado em JSON e contém exatamente 
 - `all_stocks_sorted`: ranking completo de tickers ordenado do melhor para o pior desempenho médio nos períodos semelhantes.
 - `sorted_sectors`: ranking completo de setores ordenado do melhor para o pior desempenho agregado.
 - `periods`: lista dos períodos históricos mais parecidos com o cenário macro atual.
+- `affected_metrics`: cenário macro atual extraído do input do usuário, com as variações esperadas de `selic`, `inflacao`, `dolar` e `pib`.
 
 O objetivo da análise é identificar os motivos mais prováveis para as previsões falharem. Use todo o contexto disponível para avaliar:
 
 - risco de regime macro diferente do histórico selecionado;
 - concentração excessiva em poucos papéis ou setores;
 - inversão de comportamento entre setores vencedores e perdedores;
-- fragilidade dos períodos históricos escolhidos;
 - choque específico de commodities, câmbio, juros, inflação, PIB ou fluxo estrangeiro;
 - eventos históricos ou padrões recorrentes observáveis nos períodos fornecidos, se houver algo relevante no contexto.
 
 Se for útil, você pode fazer uma leitura histórica dos períodos para buscar um motivo notável de falha, como mudança abrupta de regime, compressão de múltiplos, rotação setorial, crise local ou distorção de base. Porém, não invente fatos que não estejam suportados pelo contexto.
+Use `affected_metrics` como a base causal principal para interpretar por que o cenário pode invalidar a tese.
 
 Regras obrigatórias:
 
@@ -216,6 +206,8 @@ Regras obrigatórias:
 6. Sempre cite os elementos do contexto que justificam o risco, como tickers, setores e períodos.
 7. Se um risco parecer semelhante a outro, consolide e mantenha só o mais forte.
 8. Se alguma evidência histórica for fraca, deixe isso explícito no próprio campo de justificativa.
+9. Nunca cite limitacoes do sistema, do modelo, do codigo ou da qualidade/quantidade de dados.
+10. Os riscos devem vir do cenario macro e da dinamica de mercado, nao de restricoes operacionais.
 
 Formato de saída esperado:
 
@@ -257,7 +249,6 @@ Critérios para montar os riscos:
 - Considere se os períodos históricos selecionados são poucos, concentrados ou pouco representativos.
 - Considere se a performance foi puxada por poucos nomes muito fortes, o que aumenta risco de dispersão.
 - Considere se os setores vencedores dependem de um cenário macro muito específico e frágil.
-- Considere se os setores perdedores podem voltar a performar melhor por razões idiossincráticas.
 - Se perceber que o cenário atual é muito parecido com períodos históricos mas com pequenas diferenças críticas, destaque isso como risco.
 
 Lembre-se: a saída precisa ser somente o JSON final no formato definido acima.
@@ -272,6 +263,7 @@ O `input` recebido já vem serializado em JSON com duas chaves:
 
 - `context`: contém os dados de períodos históricos, ranking de setores e ranking de tickers.
 - `risks`: contém os top 3 riscos já analisados.
+- `affected_metrics`: contém o cenário macro atual e deve ser usado como a origem dos canais de transmissão.
 
 Regras obrigatórias:
 
@@ -347,6 +339,7 @@ Critérios para seleção:
 - Evite generalidades: cada rationale deve explicar o mecanismo de transmissão.
 - Para cada ticker, explique o driver de negocio que torna a empresa estruturalmente favorecida ou prejudicada no cenario, mesmo que o ranking historico seja usado como evidência complementar.
 - Evite frases do tipo "está em best_stocks" ou "lidera all_stocks_sorted" como justificativa principal; isso pode aparecer apenas como apoio, nao como motivo central.
+- Os racionais, mecanismos de transmissão e riscos devem conectar o contexto histórico ao `affected_metrics` de forma explícita.
 
 Exemplo de qualidade esperada para ticker:
 
@@ -354,6 +347,28 @@ Exemplo de qualidade esperada para ticker:
 - Ruim: "MGLU3.SA aparece em worst_stocks, então foi um dos piores ativos no periodo."
 
 Lembre-se: a saída precisa ser somente o JSON final no formato definido acima.
+"""
+
+generate_output_json_self_critique_prompt = """
+Voce e um revisor sênior. Sua tarefa e revisar um JSON final gerado para um cenario macro e corrigir qualquer omissao, incoerencia ou racional fraco.
+
+O input chega serializado em JSON com tres chaves:
+
+- `context`: dados completos do cenario, setores, tickers e periodos.
+- `risks`: os top 3 riscos ja analisados.
+- `draft_json`: o JSON final gerado na primeira passada.
+
+Regras obrigatorias:
+
+1. Retorne apenas JSON valido.
+2. Nao use markdown, nao use comentarios e nao inclua texto fora do JSON.
+3. Preserve exatamente o mesmo formato de saida do `draft_json`.
+4. Garanta que os mecanismos de transmissao e justificativas se conectem explicitamente a `affected_metrics`. E que eles sempre fiquem explcícitos
+5. Nao invente riscos novos: mantenha os riscos fornecidos em `risks`.
+6. Remova qualquer justificativa meta (modelo, codigo, dados, amostra pequena, etc.).
+7. Se houver pouca evidencia, explicite isso de forma objetiva no campo de justificativa.
+
+Agora revise o `draft_json`, corrija lacunas e devolva o JSON final revisado.
 """
 
 generate_report_prompt = """
@@ -373,4 +388,6 @@ Regras obrigatórias:
 7. Se houver pouca evidencia no JSON, explicite isso de forma breve.
 
 O `input` recebido ja vem serializado em JSON no formato final.
+
+O markdown deve mostrar, de forma resumida, como `affected_metrics` muda a leitura dos setores, tickers e riscos sem ultrapassar 500 palavras.
 """

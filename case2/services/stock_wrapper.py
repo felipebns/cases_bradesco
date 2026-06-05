@@ -221,14 +221,19 @@ class StockWrapper:
 
     def process_best_worst_sectors(self, all_stocks_sorted: list) -> tuple:
         print("Processing best sectors for macro scenary...")
-        sector_score = {}
+        sector_weighted_sum = {}
+        sector_weight_sum = {}
         for ticker, avg_ret in all_stocks_sorted:
             if ticker in self.ticker_meta.keys():
                 weight, sector = self.ticker_meta[ticker]
-                if sector not in sector_score:
-                    sector_score[sector] = weight * avg_ret
-                else:
-                    sector_score[sector] += weight * avg_ret
+                sector_weighted_sum[sector] = sector_weighted_sum.get(sector, 0) + (avg_ret * weight)
+                sector_weight_sum[sector] = sector_weight_sum.get(sector, 0) + weight
+
+        sector_score = {
+            sector: (sector_weighted_sum[sector] / sector_weight_sum[sector])
+            for sector in sector_weighted_sum
+            if sector_weight_sum[sector]
+        }
         
         sorted_sectors = sorted(sector_score.items(), key=lambda x: x[1], reverse=True)
         best_sectors = [sector for sector, _ in sorted_sectors[:3]]

@@ -1,108 +1,113 @@
 {
     "management_tone": {
-        "classification": "confident and constructive with pragmatic caution",
-        "change_vs_prior": "More outwardly confident and momentum-focused in the current quarter versus a defensive, stress-tested tone in the prior period. Management shifted from framing 2025 as a year of testing and recovery to highlighting concrete early-quarter improvements (volumes, net revenue per hectoliter, cash flow) while maintaining cautious language on macro/cost risks.",
+        "classification": "cautiously confident / execution-focused",
+        "change_vs_prior": "Shifted from a year-end tone of resilience and reflection to a more forward-facing, execution and growth tone that emphasizes momentum, commercial wins and confidence in cyclical recovery (World Cup/calendar tailwinds). Prior period emphasized having been 'stress tested' and preparing for 2026; current period emphasizes having already started 2026 with tangible momentum and operational execution.",
         "justification_quotes": [
-            "In tough moments, great companies and cultures find a way to get stronger, and that is what this quarter begins to show.",
-            "2025 was a tough season to play with a wet beach, cold weather and a game that kept changing. It forced us to build muscle, resilience and adaptability, and it strengthened our collective ownership as a team."
+            "\"Last year was the many and that made the third objective, the hardest to deliver. As a team, we embrace the challenge elevated our market intelligence capabilities and focus on what we could control, guided by our growth strategy.\"",
+            "\"Ambev delivered a solid start to the year. Total volumes were broadly flat against the toughest comparison base of the year while beer returned to growth, up low single digit.\"",
+            "\"We made meaningful progress on the mission we set from day 1, even in a dynamic context that stress tested our strategy.\"",
+            "\"We entered the year maintaining the same financial discipline that has guided us over the past quarters to drive long-term value creation through our capital allocation framework.\""
         ]
     },
     "guidance_changes": {
-        "summary": "No change to the headline Brazil Beer cash COGS per hectoliter guidance (4.5%-7.5% increase for 2026). Company reiterates ambition to expand consolidated margin and maintains fiscal discipline, while flagging cost pressures should ease after Q1 and highlighting a stronger cash generation start to the year.",
+        "summary": "Management maintained existing cost guidance (Brazil Beer cash COGS per hectoliter, excl. marketplace) for 2026 at 4.5%–7.5% and reiterated confidence in margin expansion ambition while flagging Q1 as peak cost intensity with easing expected from Q2. No upward or downward revision to the stated 2026 COGS guidance was announced.",
         "changes_vs_prior": [
-            "Brazil Beer cash COGS per hectoliter guidance unchanged at an increase of 4.5% to 7.5% for 2026 (same range reiterated vs prior commentary).",
-            "No change to the stated ambition of expanding consolidated margin over time; management reiterates continued share buybacks and IOC payments as part of capital return priorities."
+            "Guidance unchanged: Brazil Beer cash COGS per hectoliter excl. marketplace maintained at 4.5%–7.5% for 2026 (same range referenced in prior period).",
+            "No new formal guidance ranges were introduced; management reiterated the same cost guidance and emphasized cadence (Q1 higher; easing from Q2) rather than changing ranges."
         ],
         "themes_vs_prior": [
-            "Continued emphasis on revenue management and premiumization as drivers of nr/hl and margin expansion; carryover from 2025 revenue management is cited as a key contributor to Q1 performance.",
-            "Greater emphasis on the digital ecosystem (Zé Delivery, BEES) as growth and activation engines; stronger cash generation is being used to fund reinvestment and shareholder returns."
+            "Prior period theme: reflection on 2025 as a stress test, emphasizing resilience, margin expansion delivered in 2025 and the strategy validated.",
+            "Current period theme: execution and momentum — translating 2025 strengthening into Q1 results, commercial wins (mix/premium growth), strong Q1 cash generation, and preparing to leverage event-driven demand (World Cup) while keeping prior guidance."
         ],
         "objective_metrics": [
             {
-                "metric": "Net revenue per hectoliter (growth)",
-                "prior_period_value": "7.5% (full-year 2025 net revenue per hectoliter growth)",
-                "current_period_value": "8.3% (Q1 2026 net revenue per hectoliter performance)",
-                "delta": "+0.8 percentage points (Q1 vs FY reference)",
+                "metric": "Net revenue per hectoliter (Brazil / consolidated)",
+                "prior_period_value": "7.5% (full year 2025 net revenue per hectoliter growth)",
+                "current_period_value": "8.3% (net revenue per hectoliter growth in Q1)",
+                "delta": "+0.8 percentage point (Q1 vs FY reference)",
                 "evidence_quotes": [
-                    "In essence, Zé gives us a direct window into the future... This portfolio supported a solid net revenue per hectoliter performance, up 8.3% in the quarter.",
-                    "First, net revenue per hectoliter growth of 7.5%, supported by stronger brands, revenue management strategy and continued premiumization across our portfolio..."
+                    "\"In essence, Zé gives us a direct window into the future... This portfolio supported a solid net revenue per hectoliter performance, up 8.3% in the quarter\"",
+                    "\"We closed 2025 delivering consolidated normalized EBITDA margin expansion of 50 bps... First, net revenue per hectoliter growth of 7.5%\""
                 ]
             },
             {
-                "metric": "EBITDA margin expansion (basis points)",
-                "prior_period_value": "50 basis points (consolidated organic EBITDA margin expansion in 2025)",
-                "current_period_value": "60 basis points (Q1 2026 normalized EBITDA margin expansion)",
-                "delta": "+10 basis points (quarterly reported expansion vs prior-year full-year expansion metric)",
+                "metric": "Brazil Beer cash COGS per hectoliter (excluding marketplace) — point change",
+                "prior_period_value": "6.1% increase in 2025 (cash COGS per hectoliter, excluding non-Ambev marketplace, for full year 2025)",
+                "current_period_value": "14.6% increase in the quarter (Brazil Beer cash COGS per hectoliter in Q1)",
+                "delta": "+8.5 percentage points (Q1 YoY vs 2025 full-year increase)",
                 "evidence_quotes": [
-                    "Top line grew 9.6% and EBITDA grew 7.6% despite cost headwinds from FX and commodities.... we delivered double-digit EBITDA growth with margin expansion of 60 basis points.",
-                    "we expanded organic EBITDA margin by 50 basis points, marking our third consecutive year of margin expansion..."
+                    "\"Consolidated cash COGS per hectoliter excluding marketplace, increased 9% in the period, with Brazil Beer up 14.6%\"",
+                    "\"Brazil Beer is a clear proof point... our cash COGS per hectoliter, excluding non-Ambev marketplace products increased by 6.1% in 2025\""
                 ]
             },
             {
-                "metric": "Consolidated cash COGS per hectoliter (ex-marketplace)",
-                "prior_period_value": "6.1% increase (full-year 2025 Brazil Beer cash COGS per hectoliter, noted as landing in the first quartile of guidance)",
-                "current_period_value": "9% increase consolidated; Brazil Beer up 14.6% in Q1 2026",
-                "delta": "Consolidated: +2.9 percentage points vs prior (Brazil Beer: materially higher in Q1 vs prior full-year point)",
+                "metric": "Guidance range — Brazil Beer cash COGS per hectoliter (2026)",
+                "prior_period_value": "4.5% to 7.5% (stated for 2026 in prior call)",
+                "current_period_value": "4.5% to 7.5% (reaffirmed unchanged)",
+                "delta": "no change",
                 "evidence_quotes": [
-                    "Consolidated cash COGS per hectoliter excluding marketplace, increased 9% in the period, with Brazil Beer up 14.6%, reflecting the expected pressure from FX and commodities headwinds.",
-                    "our cash COGS per hectoliter, excluding non-Ambev marketplace products increased by 6.1% in 2025 at the lowest quartile of our guidance."
+                    "\"we maintain our Brazil Beer cash COGS per hectoliter, excluding marketplace guidance unchanged from 4.5% to 7.5% increase in 2026\"",
+                    "\"for 2026, we expect Brazil Beer cash COGS per hectoliter, excluding non-Ambev marketplace products to increase between 4.5% and 7.5%\""
                 ]
             }
         ]
     },
     "top_analyst_questions": [
         {
-            "question": "My question is about net revenue per hectoliter in Brazil Beer... If you could qualify the 8% year-on-year increase, what drove that in terms of the contribution from mix? Any contribution from price increases... and anything different in this ICMS dynamic this year that may also, in part, explain the pricing performance in Brazil Beer?",
-            "response_summary": "Management broke the nr/hl increase into three components: carryover from 2025 revenue management actions (easier comp vs 2024->25), continued execution of the revenue management agenda in 2026, and mix (above-core segment growth). They also said there was nothing notable on the tax (ICMS) side versus last year.",
-            "response_quality": "High — extracted a clear, hierarchical decomposition (carryover; revenue management ongoing; mix) and a direct confirmation that taxes/ICMS were not a material factor in the quarter.",
+            "question": "My question is about net revenue per hectoliter in Brazil Beer... If you could qualify the 8% year-on-year increase, what drove that in terms of the contribution from mix? Any contribution from price increases... and anything different in the ICMS dynamic this year?",
+            "response_summary": "Management attributed the net revenue per hectoliter increase to three hierarchical components: carryover from 2025 RGM (easier comp vs prior years), revenue management initiatives carried into 2026, and positive mix driven by above-core and premium growth. They explicitly said tax (ICMS) dynamics were not material/changed year-over-year.",
+            "response_quality": "high — provided a clear hierarchy of drivers (carryover, RGM, mix) and a direct denial of tax-effect contribution, extracting granular qualitative drivers behind the 8%.",
             "evidence_quotes": [
-                "the first component is exactly the -- all the effort put behind our revenue management agenda in '25 and the carryover we brought into the first quarter of '26.",
-                "And just to complement here, Henrique, Fleury. On the tax side, there was nothing that was important to highlight during the quarter. So same as last year."
+                "\"the first component is exactly the -- all the effort put behind our revenue management agenda in '25 and the carryover we brought into the first quarter of '26.\"",
+                "\"the second component in the hierarchy comes from our revenue management agenda into '26... And the third component comes from the mix since our above core segment continued to grow in a very solid pace\"",
+                "\"On the tax side, there was nothing that was important to highlight during the quarter. So same as last year.\""
             ]
         },
         {
             "question": "I just wanted to follow up a little bit on the COGS outlook... given the current environment with higher aluminum prices, etc. How should we think about the cost flow through for you guys based on the hedges for the rest of the year?",
-            "response_summary": "Management reiterated the 2026 Brazil Beer cash COGS per hectoliter guidance of +4.5% to +7.5%, said Q1 is likely the peak for cost pressure and that costs should start easing from Q2, and emphasized ongoing productivity and efficiency initiatives plus the role of hedges and visibility.",
-            "response_quality": "Medium-High — management gave explicit guidance confirmation, called out cadence (Q1 peak, easing from Q2) and reiterated actions, but did not provide a granular hedge/commodity sensitivity schedule.",
+            "response_summary": "CFO explained hedging/visibility processes, reiterated the 2026 Brazil Beer cash COGS per hectoliter guidance of 4.5%–7.5%, noted Q1 is probably the cost peak and expected easing from Q2 onward, and emphasized ongoing cost initiatives and efficiencies.",
+            "response_quality": "high — provided explicit guidance maintenance, timing/cadence (Q1 peak, easing Q2+), and rationale (hedges, cost projects), giving useful inputs for modeling cadence of cost pressure.",
             "evidence_quotes": [
-                "When we're starting '26, what we have said to the market is our range between 4.5% for Brazil Beer cash COGS per hectoliter, excluding marketplace from 4.5% to 7.5%.",
-                "We know, and that's something that I also comment that we know that Q1 is probably the highest on cost, and that should start easing through the second quarter onwards."
+                "\"When we're starting '26, what we have said to the market is our range between 4.5% for Brazil Beer cash COGS per hectoliter, excluding marketplace from 4.5% to 7.5%.\"",
+                "\"We know... that Q1 is probably the highest on cost, and that should start easing through the second quarter onwards.\"",
+                "\"we have our hedges, which give us a very good visibility on the forecast going forward... we are maintaining our cash COGS from 4.5% to 7.5% for the year.\""
             ]
         },
         {
-            "question": "How do you think about the World Cup timeline for demand to flow through your P&L? And are you already seeing any early pricing movements from competitors ahead of this demand peak?",
-            "response_summary": "Management quantified historical World Cup contribution (~0.3%-0.4% industry growth annually), stated the main impact occurs in Q2-Q3 (when the event takes place), noted that preparatory activations can show up earlier, and emphasized use of digital platforms (Zé Delivery/BEES) to activate demand. They did not report competitor pre-pricing actions.",
-            "response_quality": "High — provided a concrete historical contribution estimate and clear timing expectations (Q2–Q3), while also emphasizing activations and digital leverage; limited detail on competitor pricing dynamics (answered primarily on timing and activation).",
+            "question": "How confident are you that volumes can grow in the balance of 2026... cycling through the comp, World Cup effects and confidence in category recovery?",
+            "response_summary": "Management clarified the comp (Q1 '25 was a strong positive; current cycle is the toughest comp), emphasized that weakness was cyclical (weather / occasion frequency) rather than structural, pointed to calendar tailwinds (World Cup, long holidays) and portfolio momentum as drivers for recovery, and expressed confidence in gradual recovery while noting household income pressure as a watch item.",
+            "response_quality": "high — drew out the comp math clarification, reiterated that drivers were cyclical (weather) and provided qualitative confidence drivers (calendar, portfolio momentum), helping assess probability of volume recovery.",
             "evidence_quotes": [
-                "historically, the World Cup usually brings a contribution of around 0.3% to 0.4% industry growth year-over-year... That contribution usually impacts as well the second to third quarters.",
-                "And just to add one thing here, Lisboa, I think it's important to remember that on this World Cup, different from the prior, our digital platforms are much more evolved."
+                "\"First, actually, the industry is cycling through the toughest comparison base, not the easiest comparison base...\"",
+                "\"the issue was not whether consumers wanted beer, but how often the right occasions happen... the most relevant impact coming from the weather.\"",
+                "\"we do expect that, first and foremost, the calendar will bring a pretty interesting right ground for the industry to continue recovering moving forward, right? A combination of long holidays, a combination of FIFA World Cup...\""
             ]
         }
     ],
     "red_flags": [
         {
             "type": "evasao",
-            "quote": "I will keep the protocol. I'm going to answer 1 question to give you all the chance to interact with us, okay?",
-            "rationale": "Management explicitly limited answers to a single question during the Q&A, which prevents follow-up and can be used to avoid addressing multi-part or difficult questions."
+            "quote": "\"I will keep the protocol in place. I'm going to answer 1 question to give you all the chance to interact with us, okay?\"",
+            "rationale": "Management limited the number of questions answered (refused to address multiple parts of a multi-part question in that exchange), which can be interpreted as evasive when analysts asked multiple related items."
         },
         {
             "type": "evasao",
-            "quote": "I cannot -- this is not a guidance. I cannot tell you how that will come over the year.",
-            "rationale": "When asked about timing/structure of dividends/capital returns, the CFO declined to provide forward detail, using a direct refusal that leaves timing and amounts ambiguous for investors."
+            "quote": "\"...without going to any -- a territory that we don't want.\"",
+            "rationale": "When pressed on sensitive pricing specifics, management explicitly avoided providing detailed numeric guidance, indicating an unwillingness to give potentially market-moving detail."
         },
         {
             "type": "mudanca_de_assunto",
-            "quote": "I'm going to answer 1 question to give you all the chance to interact with us, okay? So regarding your first question, World Cup contribution, look, historically, the World Cup usually brings a contribution of around 0.3% to 0.4% industry growth...",
-            "rationale": "Management shifted the scope of the Q&A to a single topic and moved into a prepared historical framing on World Cup contribution rather than addressing the multi-part, contemporaneous concerns about competitor pricing and early signals—effectively changing the subject to a safer narrative."
+            "quote": "\"And just to add one thing here, Lisboa, I think it's important to remember that on this World Cup, different from the prior, our digital platforms are much more evolved. So we're going to see a lot of activations through something that we've been developing for a long period of time.\"",
+            "rationale": "Rather than directly quantifying expected World Cup demand or pricing dynamics when asked, management pivoted to promoting digital activation capabilities — a shift from the analyst's requested topic to a strategic capability narrative."
         }
     ],
     "surprise_score": {
-        "score": "5",
+        "score": "4",
         "items": [
-            "Brazil Beer volumes outperformed in the quarter (Ambev volumes +1.2% in Brazil Beer) despite industry softness commentary earlier in the cycle.",
-            "Very strong operating cash flow: \"strongest first quarter performance in the past 10 years\" and cash flow from operating activities totaled BRL 3.2 billion (BRL +2 billion YoY).",
-            "Consolidated cash COGS per hectoliter rose materially in Q1 (9% consolidated; Brazil Beer +14.6%), a notable near-term cost pressure even as guidance was reiterated."
+            "\"strongest first quarter performance in the past 10 years\" (operating cash flow: BRL 3.2 billion in Q1, +BRL 2 billion YoY)",
+            "Brazil Beer volumes grew 1.2% in the quarter despite a tough year-on-year comparison base",
+            "Guidance for Brazil Beer cash COGS per hectoliter (4.5%–7.5% for 2026) was reaffirmed unchanged"
         ],
-        "justification": "The quarter contained a mix of positive execution surprises (nr/hl up 8.3%, Brazil Beer volumes +1.2%, exceptionally strong Q1 operating cash flow) and a material near-term cost spike (COGS/hl up notably in Q1). Guidance was reiterated (no downside surprise), so the net impact is a moderate surprise level: results show clearer early momentum but also confirm short-term cost pressure — sufficient to move near-term expectations but not to change the investment thesis."
+        "justification": "The quarter delivered a few modestly surprising positive datapoints relative to a cautious backdrop — notably unusually strong Q1 cash generation and positive beer volumes in Brazil — but management did not change guidance materially and framed most results as execution of already-communicated initiatives. These outcomes are mildly surprising (tactical upside) but not transformative to the investment case."
     }
 }

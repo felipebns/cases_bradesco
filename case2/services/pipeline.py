@@ -1,5 +1,6 @@
 from services.llm_wrapper import LLM_Wrapper
 from services.stock_wrapper import StockWrapper
+from pathlib import Path
 import json
 
 class Pipeline:
@@ -38,6 +39,12 @@ class Pipeline:
         }
 
     def execute(self) -> dict:
+        output_dir = Path("data/output")
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        plots_dir = Path("data/plots")
+        plots_dir.mkdir(parents=True, exist_ok=True)
+
         print("Starting pipeline execution...")
         affected_metrics = self.llm_wrapper.parse_input(self.user_scenery)
         macro_data = self.stock_wrapper.get_macro_metrics() 
